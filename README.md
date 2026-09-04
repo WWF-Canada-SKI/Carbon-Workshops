@@ -5,99 +5,77 @@ title: Carbon Ecosystem Workshops
 
 # Carbon Ecosystem Workshops
 
-![Carbonmages/banner.jpg
+assets/images/banner.jpg
 
 ## Welcome
 
-This repository serves as the central hub for a series of ecosystem carbon workshops designed to support understanding, assessment, and management of carbon-rich environments.
+This repository is the central hub for WWF-Canada's ecosystem carbon workshops. The workshops provide practical guidance, methodologies, and resources for assessing, monitoring, and managing carbon in both coastal and terrestrial ecosystems.
 
-The workshops are organised into two categories:
-
-### 🌿 Green Carbon Ecosystems
-Terrestrial ecosystems that capture and store carbon in vegetation and soils.
-
-### 🌊 Blue Carbon Ecosystems
-Coastal and marine ecosystems that capture and store carbon in sediments and biomass.
-
----
-
-## Why These Workshops?
-
-Natural ecosystems play a critical role in climate mitigation through carbon sequestration and long-term carbon storage. Each ecosystem presents unique opportunities, challenges, methods, and data requirements for carbon assessment and management.
-
-These workshops provide practical guidance, resources, and training materials focused on specific ecosystem types.
-
----
-
-# 🌿 Green Carbon Workshops
-
-### 🌲 Forests
-Understanding forest carbon stocks, sequestration processes, inventory methods, and management considerations.
-
-**Workshop:** #
-
----
-
-### 🌾 Grasslands
-Exploring carbon dynamics in grassland ecosystems, soil carbon storage, monitoring approaches, and restoration opportunities.
-
-**Workshop:** #
-
----
-
-### 🌱 Wetlands
-Examining carbon accumulation, greenhouse gas dynamics, and the importance of wetland conservation and restoration.
-
-**Workshop:** #
-
----
-
-### ❄️ Arctic Ecosystems
-Investigating carbon storage in permafrost, tundra systems, and the impacts of climate change on northern carbon pools.
-
-**Workshop:** #
+Select a workshop below to access the associated materials, exercises, datasets, and documentation.
 
 ---
 
 # 🌊 Blue Carbon Workshops
 
-### 🌿 Eelgrass
-Understanding carbon sequestration in seagrass ecosystems, assessment methodologies, and habitat management.
+Blue Carbon ecosystems capture and store carbon in coastal and marine habitats, providing important climate, biodiversity, and ecosystem service benefits.
 
-**Workshop:** #
+| Preview | Workshop |
+|----------|-----------|
+| ![Eelgrass](assets/images/eelgrass-preview.jpg) | ### 🌿 Eelgrass<br><br>Learn about carbon sequestration and storage in eelgrass ecosystems, assessment approaches, monitoring methods, and habitat management considerations.kshop:** # |
+| ![Salt Marsh](assets/images/saltmarsh-preview.jpg) | ### 🌾 Salt Marsh<br><br>Explore carbon burial processes, restoration opportunities, ecosystem services, and monitoring techniques ecosystems.<br><br>**Workshop:** # |
+
+### 📁 Blue Carbon Workshop Repository
+
+**Access all Blue Carbon workshop materials here:**
+
+➡️ **[Blue Carbon Workshops](https://github.com/WWF-Canada-SKI/Carbon-Workshops/tree/1e0cafef0a257b499a1692650b03717e1b001c04/Blue%20Carbon%20Workshops)**
 
 ---
 
-### 🌾 Salt Marsh
-Exploring carbon burial, ecosystem services, restoration approaches, and monitoring techniques in salt marsh environments.
+# 🌿 Green Carbon Workshops
 
-**Workshop:** #
+Green Carbon ecosystems store carbon within vegetation, soils, and ecological processes across terrestrial landscapes.
+
+| Preview | Workshop |
+|----------|-----------|
+| ![Forests](assets/images/forest-preview.jpg) | ### 🌲 Forests<br><br>Understand forest carbon stocks, sequestration processes, inventory methods, and pproaches used to assess and enhance forest carbon outcomes.<br><br>**Workshop:** # |
+| ![Grasslands](assets/images/grassland-preview.jpg) | ### 🌾 Grasslands<br><br>Explore soil carbon storage, ecosystem dynamics, monitoring approaches, and opportunities for grassland conservationn.<br><br>**Workshop:** # |
+| ![Wetlands](assets/images/wetland-preview.jpg) | ### 🌱 Wetlands<br><br>Examine carbon accumulation, greenhouse gas dynamics, and the role of wetlands in climate mitigation and ecosystembr><br>**Workshop:** # |
+| ![Arctic](assets/images/arctic-preview.jpg) | ### ❄️ Arctic Ecosystems<br><br>Investigate carbon storage in tundra and permafrost systems and understand how climate change influences northern carbon dynamics.<br><br>** # |
 
 ---
 
-## Workshop Structure
+## Workshop Content
 
-Each workshop includes:
+Each workshop typically includes:
 
-- Introduction and background
-- Ecosystem carbon fundamentals
-- Data and assessment methods
+- Background and ecosystem overview
+- Carbon science fundamentals
+- Assessment methodologies
+- Data and modelling approaches
 - Practical exercises
 - Supporting resources
 - References and further reading
 
 ---
 
-## Getting Started
+## Repository Structure
 
-Select a workshop above to access its dedicated materials, documentation, datasets, and exercises.
+```text
+assets/
+├── images/
+│   ├── banner.jpg
+│   ├── eelgrass-preview.jpg
+│   ├── saltmarsh-preview.jpg
+│   ├── forest-preview.jpg
+│   ├── grassland-preview.jpg
+│   ├── wetland-preview.jpg
+│   └── arctic-preview.jpg
+
+Blue Carbon Workshops/
+Green Carbon Workshops/
+```
 
 ---
 
-## Contact
-
-For questions, suggestions, or contributions, please open an issue in this repository.
-
----
-
-*Carbon Ecosystem Workshops*
+*WWF-Canada Carbon Ecosystem Workshops*
