@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/banner_data_interpretation.svg" alt="Data Interpretation — Blue Carbon Eelgrass Workshop banner" width="100%">
+  <img src="../01_Background/images/banner_1.svg" alt="Data Interpretation — Blue Carbon Eelgrass Workshop banner" width="100%">
 </p>
 
 *From sediment samples to carbon-stock estimates.*
@@ -8,6 +8,8 @@
 
 ---
 
+> **Component in progress.** The available guide currently covers the overview and field-to-lab preparation. Later analysis sections and the digital downloads are still being prepared. See [resource availability](../resources.md#pending-materials).
+
 ## Overview
 
 This section covers what happens after the cores come out of the field: prepping your samples,
@@ -15,8 +17,8 @@ digitizing your field sheet, sending samples to a lab, checking what comes back,
 into a carbon stock you can report.
 
 It follows WWF-Canada's field guide (*Part 3: Sample Analysis* and *Part 4: Calculating Carbon
-Stocks*, pp. 15–19 of the [Coastal Blue Carbon Field Guide](../Coastal-Blue-Carbon-Field-Guide-FINAL.pdf)),
-with a dedicated [Lab Guide](Lab-Guide-Eng-2026.pdf) for the laboratory procedures, alongside
+Stocks*, pp. 15–19 of the [Coastal Blue Carbon Field Guide](https://wwf.ca/wp-content/uploads/2026/04/Coastal-Blue-Carbon-Field-Guide-FINAL.pdf)),
+with a dedicated [Lab Guide](../resources.md#pending-materials) for the laboratory procedures, alongside
 Howard et al. (2014).
 
 Everyone follows the same four steps. They take you from bagged samples to checked core stocks
@@ -26,17 +28,17 @@ in [Part 2](../02_Project_Planning/):
 | # | Step | Answers |
 |---|------|---------|
 | 1 | **[From the field to the lab](#step-1--from-the-field-to-the-lab)** | *How do I prep samples, digitize my data, and find a lab?* |
-| 2 | **[Enter the lab results](#step-2--enter-the-lab-results)** | *Where does each number from the lab go?* |
-| 3 | **[Check the data](#step-3--check-the-data)** | *Is anything missing, mislabelled or inconsistent?* |
-| 4 | **[Core stocks on a common footing](#step-4--core-stocks-on-a-common-footing)** | *How much carbon is in each core, to which depth?* |
-| A | **[Option A — our cores, and how they compare](#option-a--what-do-our-samples-tell-us-and-how-do-they-compare)** | *What do our samples tell us, and how do they compare?* |
-| B | **[Option B — an estimate for a defined area](#option-b--what-do-our-measurements-imply-for-this-meadow)** | *What do our measurements imply for this meadow or study area?* |
-| 5 | **[Report the results](#step-5--reporting-the-results)** | *What do I report, and what does each number mean?* |
+| 2 | **Enter the lab results** *(planned)* | *Where does each number from the lab go?* |
+| 3 | **Check the data** *(planned)* | *Is anything missing, mislabelled or inconsistent?* |
+| 4 | **Core stocks on a common footing** *(planned)* | *How much carbon is in each core, to which depth?* |
+| A | **Option A — our cores, and how they compare** *(planned)* | *What do our samples tell us, and how do they compare?* |
+| B | **Option B — an estimate for a defined area** *(planned)* | *What do our measurements imply for this meadow or study area?* |
+| 5 | **Report the results** *(planned)* | *What do I report, and what does each number mean?* |
 
 Files: the
-> [example digital data sheet](files/Eelgrass_Carbon_DigitalData_Example.xlsx), the
-> [example lab results sheet](files/Example_Lab_Results.xlsx) and the
-> [analysis workflow](DataAnalysisWorkflow/).
+> [example digital data sheet](../resources.md#pending-materials), the
+> [example lab results sheet](../resources.md#pending-materials) and the
+> [analysis workflow](../resources.md#pending-materials).
 
 ---
 
@@ -47,7 +49,7 @@ You come back from the field with two things:
 1. **A cooler of bagged samples**, which need to be processed and prepped for the lab.
 2. **A completed paper field data sheet**, which needs to be digitized.
 
-<img width="100%" alt="What arrives from the field: the filled-in paper field sheet for core WWF-01-A and a labelled sample bag, marked as the constructed Tsawwassen field example, with a note that the analysis that follows switches to published Cowichan cores" src="images/fig1_what_arrives.png">
+<p class="resource-note">The field-sheet and sample-bag illustration is being prepared.</p>
 
 *What to notice: every bag label matches a row on the field sheet — Core ID, Sample ID and depths.
 This is the **constructed Tsawwassen** field example; from Step 2 onwards the analysis uses the
@@ -103,8 +105,8 @@ The examples in these two tables are the **constructed Tsawwassen** field exampl
 
 **The digital data sheet**
 
-**📊 [Download the blank digital data sheet](files/Eelgrass_Carbon_DigitalData_BlankSheet.xlsx)**
-· filled-in example: [`files/Eelgrass_Carbon_DigitalData_Example.xlsx`](files/Eelgrass_Carbon_DigitalData_Example.xlsx)
+**📊 [Blank digital data sheet — availability](../resources.md#pending-materials)**
+· filled-in example: [`files/Eelgrass_Carbon_DigitalData_Example.xlsx`](../resources.md#pending-materials)
 · works in Excel, LibreOffice and Google Sheets (*File → Import*)
 
 <!-- TODO (Cathal): an online Google Sheets copy used to be linked here; it predated the 2026 revision. Re-upload the blank .xlsx and link it here if you want an online copy. -->

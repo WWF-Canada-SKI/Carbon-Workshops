@@ -1,0 +1,8 @@
+# Keep downloadable documents and media intact and out of text diffs.
+*.pdf binary
+*.xlsx binary
+*.docx binary
+*.gif binary
+*.png binary
+*.jpg binary
+*.jpeg binary

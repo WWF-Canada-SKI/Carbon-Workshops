@@ -1,0 +1,39 @@
+title: Carbon Workshops
+description: Ecosystem carbon workshop guides, field methods and resources
+baseurl: /Carbon-Workshops
+markdown: CommonMarkGhPages
+plugins:
+  - jekyll-commonmark-ghpages
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: default
+commonmark:
+  options: [UNSAFE, SMART, FOOTNOTES]
+  extensions: [strikethrough, autolink, table, tagfilter]
+readme_index:
+  enabled: true
+  remove_originals: true
+  with_frontmatter: true
+relative_links:
+  enabled: true
+exclude:
+  - scripts
+  - Gemfile
+  - Gemfile.lock
+  - SITE_GUIDE.md
+  - 'Blue Carbon Workshops/01_Background/images/README.md'
+  - 'Blue Carbon Workshops/01_Background/images/TODO.md'
+  - 'Blue Carbon Workshops/02_Project_Planning/Sampling Design Tools'
+
+# Jekyll 3 matches nested included folders by basename.
+include:
+  - _Shared
+  - _source
+  - _references
+  - _superseded

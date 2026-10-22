@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="212" viewBox="0 0 440 212" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Single-use and permanent plots</title>
+<desc id="d">Two panels. Single-use: the core is taken inside the vegetation plot. Permanent: the core is taken outside the vegetation plot, and the plot has a marker.</desc>
+<rect x="8" y="8" width="200" height="196" rx="5" fill="none" stroke="#b9b8b1" stroke-width="1"/>
+<text x="22" y="32" font-size="13.5" fill="#d95926" text-anchor="start" font-weight="600">Single-use</text>
+<rect x="48" y="72" width="88" height="88" fill="#d95926" opacity="0.10" stroke="#d95926" stroke-width="2"/>
+<rect x="62" y="104" width="24" height="24" fill="#3987e5" opacity="0.28" stroke="#3987e5" stroke-width="1.5"/>
+<text x="74" y="146" font-size="9.5" fill="#3987e5" text-anchor="middle" font-weight="normal">quadrat</text>
+<circle cx="112" cy="122" r="6" fill="#c98500"/>
+<text x="112" y="144" font-size="10" fill="#c98500" text-anchor="middle" font-weight="normal">core</text>
+<rect x="232" y="8" width="200" height="196" rx="5" fill="none" stroke="#b9b8b1" stroke-width="1"/>
+<text x="246" y="32" font-size="13.5" fill="#199e70" text-anchor="start" font-weight="600">Permanent</text>
+<rect x="272" y="72" width="88" height="88" fill="#199e70" opacity="0.10" stroke="#199e70" stroke-width="2"/>
+<rect x="286" y="104" width="24" height="24" fill="#3987e5" opacity="0.28" stroke="#3987e5" stroke-width="1.5"/>
+<text x="298" y="146" font-size="9.5" fill="#3987e5" text-anchor="middle" font-weight="normal">quadrat</text>
+<circle cx="386" cy="134" r="6" fill="#c98500"/>
+<path d="M362 134 h16" stroke="#c98500" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="386" y="156" font-size="10" fill="#c98500" text-anchor="middle" font-weight="normal">core</text>
+<circle cx="272" cy="160" r="4.5" fill="#199e70"/>
+<text x="272" y="178" font-size="9.5" fill="#199e70" text-anchor="middle" font-weight="normal">marker</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="268" viewBox="0 0 760 268" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Sample size and precision</title>
+<desc id="d">Three panels showing an estimate and its confidence band at three, nine and twenty-five samples. The band narrows as sample size grows while the simulated true mean stays fixed.</desc>
+<text x="24" y="28" font-size="14" fill="#898781" text-anchor="start" font-weight="600">What more samples buy</text>
+<text x="24" y="46" font-size="11.5" fill="#a5a49e" text-anchor="start" font-weight="normal">Each panel: the running estimate (bar) and its interval (band) against the simulated true mean (dashed).</text>
+<rect x="24" y="74" width="230" height="120" rx="4" fill="none" stroke="#b9b8b1" stroke-width="1"/>
+<rect x="54" y="103.99999999999999" width="170" height="50.4" rx="3" fill="#3987e5" opacity="0.20"/>
+<line x1="54" y1="129.2" x2="224" y2="129.2" stroke="#3987e5" stroke-width="2.5"/>
+<line x1="36" y1="124.4" x2="242" y2="124.4" stroke="#898781" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="139.0" y="214" font-size="12.5" fill="#898781" text-anchor="middle" font-weight="600">3 samples</text>
+<text x="139.0" y="230" font-size="11.5" fill="#a5a49e" text-anchor="middle" font-weight="normal">±42% (illustrative)</text>
+<rect x="270" y="74" width="230" height="120" rx="4" fill="none" stroke="#b9b8b1" stroke-width="1"/>
+<rect x="300" y="111.19999999999999" width="170" height="28.799999999999997" rx="3" fill="#3987e5" opacity="0.20"/>
+<line x1="300" y1="125.6" x2="470" y2="125.6" stroke="#3987e5" stroke-width="2.5"/>
+<line x1="282" y1="124.4" x2="488" y2="124.4" stroke="#898781" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="385.0" y="214" font-size="12.5" fill="#898781" text-anchor="middle" font-weight="600">9 samples</text>
+<text x="385.0" y="230" font-size="11.5" fill="#a5a49e" text-anchor="middle" font-weight="normal">±24% (illustrative)</text>
+<rect x="516" y="74" width="230" height="120" rx="4" fill="none" stroke="#b9b8b1" stroke-width="1"/>
+<rect x="546" y="116.0" width="170" height="16.8" rx="3" fill="#3987e5" opacity="0.20"/>
+<line x1="546" y1="124.4" x2="716" y2="124.4" stroke="#3987e5" stroke-width="2.5"/>
+<line x1="528" y1="124.4" x2="734" y2="124.4" stroke="#898781" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="631.0" y="214" font-size="12.5" fill="#898781" text-anchor="middle" font-weight="600">25 samples</text>
+<text x="631.0" y="230" font-size="11.5" fill="#a5a49e" text-anchor="middle" font-weight="normal">±14% (illustrative)</text>
+<text x="24" y="260" font-size="12" fill="#898781" text-anchor="start" font-weight="normal">A more variable pool — roots rather than soil — needs more samples to reach the same relative precision.</text>
+</svg>

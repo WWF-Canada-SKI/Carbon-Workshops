@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="366" viewBox="0 0 760 366" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Core placement and crew traffic</title>
+<desc id="d">A plot showing the clipped quadrat with its trampled surround, the core placed at a recorded offset away from it, a burrow and an old core hole marked as places to avoid, and the crew approach path routed to the core side rather than across the quadrat.</desc>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#a5a49e"/></marker></defs>
+<text x="24" y="28" font-size="14" fill="#898781" text-anchor="start" font-weight="600">Where the core goes, and where the crew does not</text>
+<text x="24" y="46" font-size="11.5" fill="#a5a49e" text-anchor="start" font-weight="normal">The core has to sample soil nobody knelt on, and miss the quadrat another measurement needs.</text>
+<rect x="110" y="80" width="280" height="220" rx="6" fill="none" stroke="#b9b8b1" stroke-width="1"/>
+<circle cx="250" cy="190" r="3.5" fill="#898781"/>
+<text x="250" y="178" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">plot centre</text>
+<circle cx="188" cy="190" r="46" fill="#d95926" opacity="0.08"/>
+<text x="188" y="248" font-size="10" fill="#d95926" text-anchor="middle" font-weight="normal">kneeling / trampled</text>
+<rect x="166" y="138" width="44" height="44" fill="#d95926" opacity="0.26" stroke="#d95926" stroke-width="2"/>
+<text x="188" y="130" font-size="10.5" fill="#d95926" text-anchor="middle" font-weight="normal">clipped quadrat</text>
+<circle cx="318" cy="224" r="7" fill="#c98500"/>
+<text x="318" y="246" font-size="10.5" fill="#c98500" text-anchor="middle" font-weight="normal">core</text>
+<path d="M254 192 L310 220" stroke="#c98500" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="318" y="270" font-size="10" fill="#c98500" text-anchor="middle" font-weight="normal">recorded offset</text>
+<text x="318" y="283" font-size="9.5" fill="#a5a49e" text-anchor="middle" font-weight="normal">bearing + distance</text>
+<circle cx="154" cy="262" r="9" fill="none" stroke="#a5a49e" stroke-width="1.6" stroke-dasharray="3 3"/>
+<path d="M148 256 l12 12 M160 256 l-12 12" stroke="#a5a49e" stroke-width="1.4"/>
+<text x="154" y="284" font-size="9.5" fill="#a5a49e" text-anchor="middle" font-weight="normal">old core hole</text>
+<circle cx="346" cy="112" r="9" fill="none" stroke="#a5a49e" stroke-width="1.6" stroke-dasharray="3 3"/>
+<path d="M340 106 l12 12 M352 106 l-12 12" stroke="#a5a49e" stroke-width="1.4"/>
+<text x="346" y="134" font-size="9.5" fill="#a5a49e" text-anchor="middle" font-weight="normal">burrow</text>
+<path d="M100 320 Q 230 310 304 238" stroke="#a5a49e" stroke-width="1.6" fill="none" stroke-dasharray="7 5" marker-end="url(#ar)"/>
+<text x="102" y="338" font-size="10.5" fill="#a5a49e" text-anchor="start" font-weight="normal">approach from the core side, not across the quadrat</text>
+<text x="452" y="92" font-size="13" fill="#898781" text-anchor="start" font-weight="600">Avoid</text>
+<path d="M453 107 l11 11 M464 107 l-11 11" stroke="#d95926" stroke-width="1.8" fill="none"/>
+<text x="474" y="116" font-size="12" fill="#898781" text-anchor="start" font-weight="normal">the clipped quadrat</text>
+<path d="M453 131 l11 11 M464 131 l-11 11" stroke="#d95926" stroke-width="1.8" fill="none"/>
+<text x="474" y="140" font-size="12" fill="#898781" text-anchor="start" font-weight="normal">where anyone knelt</text>
+<path d="M453 155 l11 11 M464 155 l-11 11" stroke="#d95926" stroke-width="1.8" fill="none"/>
+<text x="474" y="164" font-size="12" fill="#898781" text-anchor="start" font-weight="normal">wheel tracks</text>
+<path d="M453 179 l11 11 M464 179 l-11 11" stroke="#d95926" stroke-width="1.8" fill="none"/>
+<text x="474" y="188" font-size="12" fill="#898781" text-anchor="start" font-weight="normal">burrows and ant nests</text>
+<path d="M453 203 l11 11 M464 203 l-11 11" stroke="#d95926" stroke-width="1.8" fill="none"/>
+<text x="474" y="212" font-size="12" fill="#898781" text-anchor="start" font-weight="normal">previous core holes</text>
+<text x="452" y="254" font-size="11.5" fill="#a5a49e" text-anchor="start" font-weight="normal">— unless the design deliberately</text>
+<text x="452" y="271" font-size="11.5" fill="#a5a49e" text-anchor="start" font-weight="normal">targets one of them, in which</text>
+<text x="452" y="288" font-size="11.5" fill="#a5a49e" text-anchor="start" font-weight="normal">case say so on the sheet.</text>
+</svg>

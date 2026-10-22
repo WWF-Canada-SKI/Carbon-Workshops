@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample Size Explorer</title>
+<meta name="description" content="Reveal a simulated grassland carbon surface one sample at a time, and watch the estimate and its interval respond.">
+<style>
+  :root{
+    --surface:#fcfcfb; --plane:#f9f9f7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+    --grid:#e1e0d9; --axis:#c3c2b7; --line:#d9d8d1;
+    --soil:#3987e5; --root:#d95926; --truth:#52514e; --ok:#199e70;
+  }
+  :root:not([data-theme="light"]){ @media (prefers-color-scheme: dark){
+    --surface:#1a1a19; --plane:#0d0d0d; --ink:#fff; --ink2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --axis:#383835; --line:#2c2c2a;
+  }}
+  :root[data-theme="dark"]{
+    --surface:#1a1a19; --plane:#0d0d0d; --ink:#fff; --ink2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --axis:#383835; --line:#2c2c2a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--plane);color:var(--ink);
+       font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  .wrap{max-width:1020px;margin:0 auto;padding:24px 16px 64px}
+  h1{font-size:22px;margin:0 0 4px;letter-spacing:-.01em}
+  .sub{color:var(--muted);font-size:13.5px;margin:0 0 20px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px}
+  .controls{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;margin-bottom:18px}
+  .ctl{display:flex;flex-direction:column;gap:5px}
+  .ctl label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+  select,input[type=range]{accent-color:var(--soil)}
+  select{background:var(--surface);color:var(--ink);border:1px solid var(--axis);
+         border-radius:6px;padding:6px 8px;font-size:14px}
+  input[type=range]{width:160px}
+  button{background:var(--surface);color:var(--ink);border:1px solid var(--axis);
+         border-radius:6px;padding:7px 13px;font-size:14px;cursor:pointer}
+  button:hover{border-color:var(--muted)}
+  button.primary{background:var(--soil);border-color:var(--soil);color:#fff}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media (max-width:820px){ .grid2{grid-template-columns:1fr} input[type=range]{width:100%} .ctl{flex:1 1 140px} }
+  .stats{display:flex;flex-wrap:wrap;gap:22px;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+  .stat{min-width:104px}
+  .stat .k{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+  .stat .v{font-size:21px;font-weight:600;letter-spacing:-.01em}
+  .note{color:var(--muted);font-size:13px;margin-top:16px}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;margin-top:8px}
+  th,td{text-align:left;padding:5px 8px;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  details{margin-top:18px} summary{cursor:pointer;color:var(--ink2);font-size:14px}
+  .swatch{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:baseline}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Sample Size Explorer</h1>
+<p class="sub">Grassland Carbon Workshop &middot; Part 2, Step 4. Reveal a simulated carbon
+surface one sample at a time and watch what happens to the estimate and its interval.</p>
+
+<div class="card">
+  <div class="controls">
+    <div class="ctl">
+      <label for="pool">Pool</label>
+      <select id="pool">
+        <option value="soil">Soil carbon &mdash; CV 0.30</option>
+        <option value="root">Root biomass &mdash; CV 0.70</option>
+        <option value="both">Compare both</option>
+      </select>
+    </div>
+    <div class="ctl">
+      <label for="n">Samples: <b id="nval">8</b></label>
+      <input type="range" id="n" min="2" max="60" value="8">
+    </div>
+    <div class="ctl">
+      <label for="conf">Confidence</label>
+      <select id="conf"><option value="0.90">90%</option><option value="0.95">95%</option></select>
+    </div>
+    <div class="ctl">
+      <label for="target">Target</label>
+      <select id="target"><option value="0.2">&plusmn;20%</option><option value="0.3">&plusmn;30%</option><option value="0.4">&plusmn;40%</option></select>
+    </div>
+    <div class="ctl"><label>&nbsp;</label><button id="reseed">New site</button></div>
+    <div class="ctl"><label>&nbsp;</label><button id="play" class="primary">Reveal &#9654;</button></div>
+  </div>
+
+  <div class="grid2">
+    <div>
+      <svg id="map" viewBox="0 0 420 300" width="100%" role="img" aria-label="Simulated carbon surface with sampled plots revealed"></svg>
+      <p class="note" id="maplegend"></p>
+    </div>
+    <div>
+      <svg id="chart" viewBox="0 0 420 300" width="100%" role="img" aria-label="Running estimate and confidence interval against the simulated true mean"></svg>
+      <p class="note" id="chartnote">Dashed line is the simulated true mean &mdash; known here, never known in the field.</p>
+    </div>
+  </div>
+
+  <div class="stats" id="stats"></div>
+</div>
+
+<details>
+  <summary>The numbers behind this, as a table</summary>
+  <table id="tbl"><thead><tr>
+    <th>Pool</th><th class="num">n</th><th class="num">mean</th><th class="num">SD</th>
+    <th class="num">SE</th><th class="num">t</th><th class="num">achieved</th><th>vs target</th>
+  </tr></thead><tbody></tbody></table>
+</details>
+
+<details>
+  <summary>What this does and does not show</summary>
+  <p class="note">
+    The surface is simulated, so the &ldquo;true mean&rdquo; is knowable and the estimate can be
+    checked against it. In the field it never is &mdash; the interval is all you have.
+    Samples are placed at random, the estimate is a simple mean, and the interval uses
+    Student's <i>t</i> on <i>n</i>&minus;1 degrees of freedom. Roots are drawn with more than
+    twice the coefficient of variation of soil carbon, which is why the same number of samples
+    buys a much wider interval. That is the whole argument for setting the two targets
+    separately. Nothing here replaces the
+    <a href="grassland-sample-allocation.xlsx">Sample Allocation Calculator</a>, which sizes a
+    real campaign from your own prior.
+  </p>
+</details>
+
+</div>
+<script>
+const $ = s => document.querySelector(s);
+const NS = "http://www.w3.org/2000/svg";
+const POOLS = { soil:{cv:0.30,mean:11.0,col:"var(--soil)",lab:"Soil carbon",unit:"kg C/m²"},
+                root:{cv:0.70,mean:1.05,col:"var(--root)",lab:"Root biomass",unit:"kg C/m²"} };
+
+let seed = 20260923;
+function rnd(){ seed = (seed*1664525 + 1013904223) % 4294967296; return seed/4294967296; }
+function gauss(){ let u=0,v=0; while(!u) u=rnd(); while(!v) v=rnd();
+  return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v); }
+
+// Two-sided Student t, Hill's approximation — plenty for a teaching tool.
+function tinv(p, df){
+  if (df > 300) return zinv(p);
+  const a = 1/(df-0.5), b = 48/(a*a);
+  let c = ((20700*a/b - 98)*a - 16)*a + 96.36;
+  let d = ((94.5/(b+c) - 3)/b + 1)*Math.sqrt(a*Math.PI/2)*df;
+  let x = d*p, y = Math.pow(x, 2/df);
+  if (y > 0.05 + a){
+    x = zinv(p/2);
+    y = x*x;
+    if (df < 5) c += 0.3*(df-4.5)*(x+0.6);
+    c = (((0.05*d*x - 5)*x - 7)*x - 2)*x + b + c;
+    y = (((((0.4*y + 6.3)*y + 36)*y + 94.5)/c - y - 3)/b + 1)*x;
+    y = a*y*y;
+    y = y > 0.002 ? Math.exp(y) - 1 : y + 0.5*y*y;
+  } else {
+    y = ((1/(((df+6)/(df*y) - 0.089*d - 0.822)*(df+2)*3) + 0.5/(df+4))*y - 1)*(df+1)/(df+2) + 1/y;
+  }
+  return Math.sqrt(df*y);
+}
+function zinv(p){ // two-sided p -> z
+  const q = 1 - p/2;
+  const a=[-39.696830286653757,220.94609842452050,-275.92851044696869,138.35775186726900,-30.664798066147160,2.5066282774592392];
+  const b=[-54.476098798224058,161.58583685804089,-155.69897985988661,66.801311887719720,-13.280681552885721];
+  const c=[-0.0077848940024302926,-0.32239645804113648,-2.4007582771618381,-2.5497325393437338,4.3746641414649678,2.9381639826987831];
+  const d=[0.0077846957090414622,0.32246712907003983,2.4451341117583954,3.7544086619074162];
+  const pl=0.02425;
+  let x;
+  if (q < pl){ const u=Math.sqrt(-2*Math.log(q));
+    x=(((((c[0]*u+c[1])*u+c[2])*u+c[3])*u+c[4])*u+c[5])/((((d[0]*u+d[1])*u+d[2])*u+d[3])*u+1); }
+  else if (q <= 1-pl){ const u=q-0.5, r=u*u;
+    x=(((((a[0]*r+a[1])*r+a[2])*r+a[3])*r+a[4])*r+a[5])*u/(((((b[0]*r+b[1])*r+b[2])*r+b[3])*r+b[4])*r+1); }
+  else { const u=Math.sqrt(-2*Math.log(1-q));
+    x=-(((((c[0]*u+c[1])*u+c[2])*u+c[3])*u+c[4])*u+c[5])/((((d[0]*u+d[1])*u+d[2])*u+d[3])*u+1); }
+  return Math.abs(x);
+}
+
+const GX=14, GY=14, CELL=28, NX=14, NY=10;
+let field = {}, order = [];
+
+function build(){
+  order = [];
+  for (const k of ["soil","root"]){
+    const P = POOLS[k], g = [];
+    // a smooth trend plus noise, scaled so the realised CV lands near the target
+    const cx1=rnd()*NX, cy1=rnd()*NY, cx2=rnd()*NX, cy2=rnd()*NY;
+    for (let i=0;i<NX;i++) for (let j=0;j<NY;j++){
+      const t = Math.exp(-((i-cx1)**2+(j-cy1)**2)/28) - 0.6*Math.exp(-((i-cx2)**2+(j-cy2)**2)/18);
+      g.push(P.mean*(1 + P.cv*(0.85*t + 0.62*gauss())));
+    }
+    field[k] = g.map(v => Math.max(v*0.05, v));
+  }
+  for (let i=0;i<NX*NY;i++) order.push(i);
+  for (let i=order.length-1;i>0;i--){ const j=Math.floor(rnd()*(i+1)); [order[i],order[j]]=[order[j],order[i]]; }
+}
+
+function stats(k, n){
+  const v = order.slice(0,n).map(i => field[k][i]);
+  const mean = v.reduce((a,b)=>a+b,0)/v.length;
+  const sd = v.length<2 ? NaN : Math.sqrt(v.reduce((a,b)=>a+(b-mean)**2,0)/(v.length-1));
+  const se = sd/Math.sqrt(v.length);
+  const conf = +$("#conf").value;
+  const t = v.length<2 ? NaN : tinv(1-conf, v.length-1);
+  return { n:v.length, mean, sd, se, t, half:t*se, rel:t*se/mean,
+           truth: field[k].reduce((a,b)=>a+b,0)/field[k].length };
+}
+
+const covers = s => Number.isFinite(s.half)
+  && s.truth >= s.mean - s.half && s.truth <= s.mean + s.half;
+
+function el(tag, attrs, txt){
+  const e = document.createElementNS(NS, tag);
+  for (const a in attrs) e.setAttribute(a, attrs[a]);
+  if (txt != null) e.textContent = txt;
+  return e;
+}
+
+function draw(){
+  const n = +$("#n").value, mode = $("#pool").value, tgt = +$("#target").value;
+  $("#nval").textContent = n;
+  const keys = mode === "both" ? ["soil","root"] : [mode];
+
+  // ── map ──────────────────────────────────────────────────────────────────
+  const map = $("#map"); map.innerHTML = "";
+  const mk = keys[0], vals = field[mk];
+  const lo = Math.min(...vals), hi = Math.max(...vals);
+  const shown = new Set(order.slice(0,n));
+  for (let i=0;i<NX;i++) for (let j=0;j<NY;j++){
+    const idx = i*NY+j, v = (vals[idx]-lo)/(hi-lo || 1);
+    const on = shown.has(idx);
+    map.appendChild(el("rect",{x:GX+i*CELL, y:GY+j*CELL, width:CELL-2, height:CELL-2, rx:2,
+      fill: POOLS[mk].col, opacity: on ? (0.20+0.65*v).toFixed(2) : 0.06}));
+    if (on) map.appendChild(el("rect",{x:GX+i*CELL, y:GY+j*CELL, width:CELL-2, height:CELL-2,
+      rx:2, fill:"none", stroke:POOLS[mk].col, "stroke-width":1.6, opacity:0.9}));
+  }
+  $("#maplegend").innerHTML =
+    `<span class="swatch" style="background:${POOLS[mk].col}"></span>${POOLS[mk].lab} &mdash; `+
+    `${n} of ${NX*NY} plots revealed. Faint cells are unmeasured.`;
+
+  // ── chart ────────────────────────────────────────────────────────────────
+  const ch = $("#chart"); ch.innerHTML = "";
+  const X0=54, X1=406, Y0=26, Y1=252;
+  const S = keys.map(k => ({k, ...stats(k, n)}));
+
+  // Soil sits near 11 kg C/m2 and roots near 1. On one absolute axis the root
+  // interval collapses to a line and the comparison is unreadable. Two y-scales
+  // would be worse. So in compare mode both pools are INDEXED to their own true
+  // mean (= 100%), which is the right basis anyway: the lesson is about the
+  // WIDTH of the interval, not the level of the pool.
+  const indexed = S.length > 1;
+  const P = s => v => indexed ? 100*v/s.truth : v;
+  const fmtAx = v => indexed ? v.toFixed(0)+"%" : v.toFixed(v<3?2:1);
+
+  const allV = S.flatMap(s => [s.truth, s.mean-s.half, s.mean+s.half]
+                              .filter(Number.isFinite).map(P(s)));
+  let vmin = Math.min(...allV), vmax = Math.max(...allV);
+  const pad = (vmax-vmin)*0.35 || (indexed ? 12 : 1);
+  vmin -= pad; vmax += pad; if (!indexed) vmin = Math.max(0, vmin);
+  const Y = v => Y1 - (v-vmin)/(vmax-vmin)*(Y1-Y0);
+
+  for (let g=0; g<=4; g++){
+    const v = vmin + (vmax-vmin)*g/4;
+    ch.appendChild(el("line",{x1:X0,y1:Y(v),x2:X1,y2:Y(v),stroke:"var(--grid)","stroke-width":1}));
+    ch.appendChild(el("text",{x:X0-8,y:Y(v)+4,"font-size":11,fill:"var(--muted)","text-anchor":"end"},
+      fmtAx(v)));
+  }
+  ch.appendChild(el("text",{x:X0,y:Y0-10,"font-size":10.5,fill:"var(--muted)"},
+    indexed ? "% of each pool's true mean" : POOLS[keys[0]].unit));
+  const bw = (X1-X0)/S.length;
+  S.forEach((s,i) => {
+    const cxx = X0 + bw*(i+0.5), p = P(s);
+    ch.appendChild(el("line",{x1:cxx-bw*0.40,y1:Y(p(s.truth)),x2:cxx+bw*0.40,y2:Y(p(s.truth)),
+      stroke:"var(--truth)","stroke-width":1.6,"stroke-dasharray":"5 4"}));
+    ch.appendChild(el("text",{x:cxx-bw*0.40,y:Y(p(s.truth))-7,"font-size":10.5,fill:"var(--muted)"},
+      "true mean"));
+    if (Number.isFinite(s.half)){
+      ch.appendChild(el("rect",{x:cxx-30, y:Y(p(s.mean+s.half)), width:60,
+        height:Math.max(2,Y(p(s.mean-s.half))-Y(p(s.mean+s.half))), rx:3,
+        fill:POOLS[s.k].col, opacity:0.20}));
+    }
+    ch.appendChild(el("line",{x1:cxx-34,y1:Y(p(s.mean)),x2:cxx+34,y2:Y(p(s.mean)),
+      stroke:POOLS[s.k].col,"stroke-width":3}));
+    ch.appendChild(el("text",{x:cxx,y:Y1+22,"font-size":12,fill:"var(--ink2)","text-anchor":"middle"},
+      POOLS[s.k].lab));
+    const ok = s.rel <= tgt;
+    ch.appendChild(el("text",{x:cxx,y:Y1+40,"font-size":12,"font-weight":600,
+      fill: ok ? "var(--ok)" : POOLS[s.k].col,"text-anchor":"middle"},
+      Number.isFinite(s.rel) ? `±${(s.rel*100).toFixed(0)}% ${ok?"— met":"— not met"}` : "n too small"));
+  });
+  ch.appendChild(el("line",{x1:X0,y1:Y1,x2:X1,y2:Y1,stroke:"var(--axis)","stroke-width":1.5}));
+
+  // ── stats + table ────────────────────────────────────────────────────────
+  $("#chartnote").innerHTML = indexed
+    ? "Both pools are shown as a percentage of their OWN true mean, because soil sits near 11 kg C/m² "
+      + "and roots near 1 &mdash; on one absolute axis the root interval would vanish. What to compare "
+      + "is the WIDTH of the two bands."
+    : "Dashed line is the simulated true mean &mdash; known here, never known in the field.";
+
+  $("#stats").innerHTML = S.map(s => `
+    <div class="stat"><div class="k">${POOLS[s.k].lab} mean</div>
+      <div class="v" style="color:${POOLS[s.k].col}">${s.mean.toFixed(2)}</div></div>
+    <div class="stat"><div class="k">achieved</div>
+      <div class="v">${Number.isFinite(s.rel)?"±"+(s.rel*100).toFixed(0)+"%":"—"}</div></div>
+    <div class="stat"><div class="k">off true mean</div>
+      <div class="v">${(100*(s.mean-s.truth)/s.truth).toFixed(1)}%</div></div>
+    <div class="stat"><div class="k">interval contains truth</div>
+      <div class="v" style="color:${covers(s)?"var(--ok)":"var(--root)"}">${covers(s)?"yes":"NO"}</div></div>`).join("")
+    + (S.some(s => !covers(s)) ? `<div class="stat" style="flex:1 1 100%;min-width:0">
+        <div class="k" style="color:var(--root)">worth noticing</div>
+        <div style="font-size:13px;color:var(--ink2)">Hitting the precision target is not the
+        same as being right. At this sample size the interval does not contain the true mean &mdash;
+        which is exactly what a 90% confidence level predicts about one time in ten. Press
+        <b>New site</b> a few times and watch how often it happens.</div></div>` : "");
+
+  $("#tbl tbody").innerHTML = S.map(s => `<tr>
+    <td>${POOLS[s.k].lab}</td><td class="num">${s.n}</td><td class="num">${s.mean.toFixed(3)}</td>
+    <td class="num">${Number.isFinite(s.sd)?s.sd.toFixed(3):"—"}</td>
+    <td class="num">${Number.isFinite(s.se)?s.se.toFixed(3):"—"}</td>
+    <td class="num">${Number.isFinite(s.t)?s.t.toFixed(3):"—"}</td>
+    <td class="num">${Number.isFinite(s.rel)?"±"+(s.rel*100).toFixed(1)+"%":"—"}</td>
+    <td>${Number.isFinite(s.rel)?(s.rel<=tgt?"met":"not met"):"—"}</td></tr>`).join("");
+}
+
+let timer = null;
+$("#play").onclick = () => {
+  if (timer){ clearInterval(timer); timer=null; $("#play").textContent="Reveal ▶"; return; }
+  $("#n").value = 2; draw(); $("#play").textContent = "Pause ❚❚";
+  timer = setInterval(() => {
+    const v = +$("#n").value;
+    if (v >= +$("#n").max){ clearInterval(timer); timer=null; $("#play").textContent="Reveal ▶"; return; }
+    $("#n").value = v+1; draw();
+  }, 140);
+};
+$("#reseed").onclick = () => { seed = (Date.now() % 4294967296); build(); draw(); };
+["n","pool","conf","target"].forEach(id => $("#"+id).addEventListener("input", draw));
+
+build(); draw();
+</script>
+</body>
+</html>

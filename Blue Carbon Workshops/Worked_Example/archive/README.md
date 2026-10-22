@@ -9,4 +9,4 @@ These files are kept for reference. They are **not** part of the current worksho
 
 The Tsawwassen team's **planning** story stays in [`../02_Project_Planning.md`](../02_Project_Planning.md),
 labelled as constructed. The current analysis examples use openly published Cowichan cores
-(Douglas et al. 2022, via Janousek et al. 2025). See [Part 4](../../04_Data_Interpretation/).
+(Douglas et al. 2022, via Janousek et al. 2025). See [Part 4](../../04_Results/).
