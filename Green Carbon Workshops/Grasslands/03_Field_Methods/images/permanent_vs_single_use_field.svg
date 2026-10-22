@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Destructive sampling in permanent and single-use plots</title>
+<desc id="d">Two field layouts. In the single-use plot the clip quadrat and core sit inside the vegetation area, taken after the survey. In the permanent plot both sit outside a marked exclusion line, with the offset recorded, and crew traffic is routed around the area that will be re-measured.</desc>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#a5a49e"/></marker></defs>
+<text x="24" y="28" font-size="14" fill="#898781" text-anchor="start" font-weight="600">Where the destructive samples go</text>
+<text x="24" y="46" font-size="11.5" fill="#a5a49e" text-anchor="start" font-weight="normal">Same plot, two designs. The difference is whether the measured vegetation has to survive the visit.</text>
+<rect x="24" y="70" width="344" height="240" rx="5" fill="none" stroke="#b9b8b1" stroke-width="1"/>
+<text x="38" y="94" font-size="13.5" fill="#d95926" text-anchor="start" font-weight="600">Single-use</text>
+<rect x="76" y="152" width="116" height="116" rx="4" fill="#d95926" opacity="0.10" stroke="#d95926" stroke-width="2"/>
+<text x="134" y="140" font-size="10.5" fill="#a5a49e" text-anchor="middle" font-weight="normal">vegetation measured here</text>
+<circle cx="76" cy="152" r="4.5" fill="#d95926"/>
+<text x="62" y="155.5" font-size="10" fill="#d95926" text-anchor="end" font-weight="normal">marker</text>
+<rect x="94" y="168" width="28" height="28" fill="#3987e5" opacity="0.28" stroke="#3987e5" stroke-width="1.5"/>
+<text x="108" y="160" font-size="10" fill="#3987e5" text-anchor="middle" font-weight="normal">clip</text>
+<circle cx="160" cy="240" r="6" fill="#c98500"/>
+<text x="160" y="260" font-size="10" fill="#c98500" text-anchor="middle" font-weight="normal">core</text>
+<path d="M38 282 Q 56 274 146 248" stroke="#a5a49e" stroke-width="1.5" fill="none" stroke-dasharray="6 4" marker-end="url(#ar)"/>
+<text x="38" y="298" font-size="10" fill="#a5a49e" text-anchor="start" font-weight="normal">crew traffic</text>
+<text x="354" y="298" font-size="10.5" fill="#d95926" text-anchor="end" font-weight="normal">destructive work inside, after the survey</text>
+<rect x="392" y="70" width="344" height="240" rx="5" fill="none" stroke="#b9b8b1" stroke-width="1"/>
+<text x="406" y="94" font-size="13.5" fill="#199e70" text-anchor="start" font-weight="600">Permanent</text>
+<rect x="444" y="152" width="116" height="116" rx="4" fill="#199e70" opacity="0.10" stroke="#199e70" stroke-width="2"/>
+<text x="502" y="140" font-size="10.5" fill="#a5a49e" text-anchor="middle" font-weight="normal">vegetation measured here</text>
+<circle cx="444" cy="152" r="4.5" fill="#199e70"/>
+<text x="430" y="155.5" font-size="10" fill="#199e70" text-anchor="end" font-weight="normal">marker</text>
+<rect x="588" y="168" width="28" height="28" fill="#3987e5" opacity="0.28" stroke="#3987e5" stroke-width="1.5"/>
+<text x="602" y="160" font-size="10" fill="#3987e5" text-anchor="middle" font-weight="normal">clip</text>
+<circle cx="602" cy="244" r="6" fill="#c98500"/>
+<text x="613" y="248" font-size="10" fill="#c98500" text-anchor="start" font-weight="normal">core</text>
+<rect x="436" y="144" width="132" height="132" rx="6" fill="none" stroke="#d95926" stroke-width="1.6" stroke-dasharray="5 4"/>
+<path d="M568 244 H 594" stroke="#c98500" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="587.0" y="232" font-size="10" fill="#c98500" text-anchor="middle" font-weight="normal">offset</text>
+<path d="M406 282 Q 502 300 596 262" stroke="#a5a49e" stroke-width="1.5" fill="none" stroke-dasharray="6 4" marker-end="url(#ar)"/>
+<text x="406" y="298" font-size="10" fill="#a5a49e" text-anchor="start" font-weight="normal">crew traffic</text>
+<text x="722" y="298" font-size="10.5" fill="#d95926" text-anchor="end" font-weight="normal">keep destructive work outside this line</text>
+</svg>

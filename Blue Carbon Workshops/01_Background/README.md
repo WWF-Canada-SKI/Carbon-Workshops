@@ -255,7 +255,7 @@ The first two steps are the workshop's two core jobs (see the [main guide](../RE
   That's [Section 3 — Field Methods](../03_Field_Methods/).
 
 Steps 3 and 4 — analysing the samples and calculating carbon — are
-[Section 4 — Data Interpretation](../04_Data_Interpretation/). Done together, they ensure the
+[Section 4 — Data Interpretation](../04_Results/). Done together, they ensure the
 samples you collect are used as effectively as possible to support your project and
 organizational goals.
 

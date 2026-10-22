@@ -13,6 +13,8 @@ any section you wish.
 
 ---
 
+> **Resource availability:** Some digital workbooks and analysis materials referenced in this guide have not yet been added. Check [Downloads & Resources](resources.md) for available files and pending materials.
+
 ## Contents
 
 | # | Section | What it covers |
@@ -20,13 +22,13 @@ any section you wish.
 | 1 | [**Background**](01_Background/) | What blue carbon is and why it matters; introduce key references (the [Howard et al. Blue Carbon Manual](https://www.thebluecarboninitiative.org/manual)); the workshop [slide deck](01_Background/BlueCarbon_EelgrassPPT_FinalV1.pdf).|
 | 2 | [**Project Planning**](02_Project_Planning/) | How many samples to take and where: Intro to probability-based sampling, sampling distribution strategies, and the WWF-Canada sampling-design guide + sampling design tools. |
 | 3 | [**Field Methods**](03_Field_Methods/) | Collecting sediment cores: equipment, step-by-step coring methods and coring how-to videos, and accompanying datasheets. |
-| 4 | [**Data Interpretation**](04_Data_Interpretation/) | Submitting samples to a lab, reading lab results, and the full carbon analysis. |
+| 4 | [**Data Interpretation**](04_Results/) | Field-to-lab preparation and the outline for analysis; later sections in development. |
 
 
 ### Useful links
 
 - **WWF-Canada Carbon Measurement library** — [wwf.ca/carbon-measurement](https://wwf.ca/carbon-measurement/)
-- **Coastal Blue Carbon Field Guide** — [PDF](Coastal-Blue-Carbon-Field-Guide-FINAL.pdf) · [companion video playlist](https://www.youtube.com/playlist?list=PLLsjpJMfNDP5w78ZJNDUvMj1VoRG_qSwd)
+- **Coastal Blue Carbon Field Guide** — [PDF](https://wwf.ca/wp-content/uploads/2026/04/Coastal-Blue-Carbon-Field-Guide-FINAL.pdf) · [companion video playlist](https://www.youtube.com/playlist?list=PLLsjpJMfNDP5w78ZJNDUvMj1VoRG_qSwd)
 - **Howard et al. Blue Carbon Manual** — [thebluecarboninitiative.org/manual](https://www.thebluecarboninitiative.org/manual)
 - **Sampling design tools** — [interactive tool](https://blue-carbon-hub.projects.earthengine.app/) · [source code](https://github.com/WWF-Canada-SKI/Carbon-Measurement/tree/main/Blue%20Carbon/Sampling%20Design%20Tools)
 
@@ -62,9 +64,9 @@ The workshop therefore focuses on two things, in the order you'd do them:
 
 
 Take some time to explore the data sheet in both forms: a
-[blank sheet](04_Data_Interpretation/files/Eelgrass_Carbon_DigitalData_BlankSheet.xlsx) to fill
+[blank sheet](resources.md#pending-materials) to fill
 in for your own site, and a
-[worked example](04_Data_Interpretation/files/Eelgrass_Carbon_DigitalData_Example.xlsx) with data
+[worked example](resources.md#pending-materials) with data
 already entered so you can follow along. The example data is for teaching purposes only and it is not
 from a real field outing. Throughout, the workshop covers why we collect each piece of data, what it
 is, how it is measured, and how it connects to your goals.
@@ -74,7 +76,7 @@ designing the sampling plan so the data you'll collect is most effective. [**Sec
 Methods**](03_Field_Methods/) is the **collecting the data** component. It covers taking the cores that fill the
 sheet. Done together, they ensure your samples are collected effectively and with best
 practices — so the data best supports your project and organizational goals.
-[**Section 4 — Data Interpretation**](04_Data_Interpretation/) then turns the completed sheet
+[**Section 4 — Data Interpretation**](04_Results/) then turns the completed sheet
 into carbon estimates.
 
 **The data sheet we're building toward:** [digital data sheet (Google Sheets)](https://docs.google.com/spreadsheets/d/1XMA_zaFNKtxCw2tAiQa3gHaIiT_wJAecmwW7Rz4hhaQ/edit?usp=sharing)
@@ -84,8 +86,8 @@ into carbon estimates.
 |---|---|---|
 | Plot & core information (location, depths, corer) | the field | [Section 3](03_Field_Methods/) |
 | Sample slices (depths, notes) | the field | [Section 3](03_Field_Methods/) |
-| Lab results (weights, %C) | after the lab | [Section 4](04_Data_Interpretation/) |
-| Bulk density, carbon stock | calculated for you | [Section 4](04_Data_Interpretation/) |
+| Lab results (weights, %C) | after the lab | [Section 4](04_Results/) |
+| Bulk density, carbon stock | calculated for you | [Section 4](04_Results/) |
 
 
 ---
@@ -112,8 +114,8 @@ more carbon stored per square metre. The sheet does this arithmetic for every sl
 - [`BlueCarbon_EelgrassPPT_FinalV1.pptx`](01_Background/BlueCarbon_EelgrassPPT_FinalV1.pptx) — the full workshop slide deck ([PDF version](01_Background/BlueCarbon_EelgrassPPT_FinalV1.pdf)).
 - [`BlueCarbon_SampleAllocation_Spreadsheet_V2.xlsx`](02_Project_Planning/BlueCarbon_SampleAllocation_Spreadsheet_V2.xlsx) — the sample-size calculator.
 - [`Eelgrass_Carbon_Datasheet_v2.pdf`](03_Field_Methods/Eelgrass_Carbon_Datasheet_v2.pdf) — the field datasheet.
-- **Coastal Blue Carbon Field Guide** — [PDF](Coastal-Blue-Carbon-Field-Guide-FINAL.pdf) · [companion video playlist](https://www.youtube.com/playlist?list=PLLsjpJMfNDP5w78ZJNDUvMj1VoRG_qSwd).
-- [`04_Data_Interpretation/DataAnalysisWorkflow/`](04_Data_Interpretation/DataAnalysisWorkflow/) — the complete R analysis pipeline and report.
+- **Coastal Blue Carbon Field Guide** — [PDF](https://wwf.ca/wp-content/uploads/2026/04/Coastal-Blue-Carbon-Field-Guide-FINAL.pdf) · [companion video playlist](https://www.youtube.com/playlist?list=PLLsjpJMfNDP5w78ZJNDUvMj1VoRG_qSwd).
+- [`04_Data_Interpretation/DataAnalysisWorkflow/`](resources.md#pending-materials) — analysis pipeline and report (not yet added; see availability).
 - **Ecosystem Carbon Accumulation Visualizer** — [cathald.github.io/CarbonAccumulationVisualizer](https://cathald.github.io/CarbonAccumulationVisualizer/)
 - **WWF-Canada Blue Carbon Sampling Design Tools** — [github.com/WWF-Canada-SKI/Carbon-Measurement](https://github.com/WWF-Canada-SKI/Carbon-Measurement/tree/main/Blue%20Carbon/Sampling%20Design%20Tools)
 

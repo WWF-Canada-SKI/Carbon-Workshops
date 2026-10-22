@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="388" viewBox="0 0 760 388" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Root separation workflow (draft)</title>
+<desc id="d">An eight-step sequence from field-moist subsample through soaking, nested sieves, sorting, diameter classes, drying, weighing and ash correction, each with the record it requires. It splits into a soil stream and a root stream which are marked as never recombined, and carries a banner stating that this is a draft rather than a validated standard operating procedure.</desc>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#b9b8b1"/></marker></defs>
+<text x="24" y="28" font-size="14" fill="#898781" text-anchor="start" font-weight="600">Root separation — the draft sequence</text>
+<text x="24" y="46" font-size="11.5" fill="#a5a49e" text-anchor="start" font-weight="normal">Each step has a record attached to it. The soil stream and the root stream must never merge again.</text>
+<rect x="28" y="100" width="78" height="60" rx="5" fill="#199e70" opacity="0.12" stroke="#199e70" stroke-width="1.5"/>
+<text x="67.0" y="126" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">field-moist</text>
+<text x="67.0" y="140" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">subsample</text>
+<text x="67.0" y="92" font-size="9.5" fill="#a5a49e" text-anchor="middle" font-weight="normal">mass + ID</text>
+<path d="M107 130 h8" stroke="#b9b8b1" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="118" y="100" width="78" height="60" rx="5" fill="#199e70" opacity="0.12" stroke="#199e70" stroke-width="1.5"/>
+<text x="157.0" y="126" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">soak /</text>
+<text x="157.0" y="140" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">disaggregate</text>
+<text x="157.0" y="92" font-size="9.5" fill="#a5a49e" text-anchor="middle" font-weight="normal">solution, time</text>
+<path d="M197 130 h8" stroke="#b9b8b1" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="208" y="100" width="78" height="60" rx="5" fill="#199e70" opacity="0.12" stroke="#199e70" stroke-width="1.5"/>
+<text x="247.0" y="126" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">nested</text>
+<text x="247.0" y="140" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">sieves</text>
+<text x="247.0" y="92" font-size="9.5" fill="#a5a49e" text-anchor="middle" font-weight="normal">every mesh</text>
+<path d="M287 130 h8" stroke="#b9b8b1" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="298" y="100" width="78" height="60" rx="5" fill="#199e70" opacity="0.12" stroke="#199e70" stroke-width="1.5"/>
+<text x="337.0" y="126" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">sort roots</text>
+<text x="337.0" y="140" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">from debris</text>
+<text x="337.0" y="92" font-size="9.5" fill="#a5a49e" text-anchor="middle" font-weight="normal">rule, operator</text>
+<path d="M377 130 h8" stroke="#b9b8b1" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="388" y="100" width="78" height="60" rx="5" fill="#199e70" opacity="0.12" stroke="#199e70" stroke-width="1.5"/>
+<text x="427.0" y="126" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">diameter</text>
+<text x="427.0" y="140" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">classes</text>
+<text x="427.0" y="92" font-size="9.5" fill="#a5a49e" text-anchor="middle" font-weight="normal">boundary</text>
+<path d="M467 130 h8" stroke="#b9b8b1" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="478" y="100" width="78" height="60" rx="5" fill="#199e70" opacity="0.12" stroke="#199e70" stroke-width="1.5"/>
+<text x="517.0" y="126" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">dry to</text>
+<text x="517.0" y="140" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">constant mass</text>
+<text x="517.0" y="92" font-size="9.5" fill="#a5a49e" text-anchor="middle" font-weight="normal">temp, criterion</text>
+<path d="M557 130 h8" stroke="#b9b8b1" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="568" y="100" width="78" height="60" rx="5" fill="#199e70" opacity="0.12" stroke="#199e70" stroke-width="1.5"/>
+<text x="607.0" y="126" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">weigh</text>
+<text x="607.0" y="92" font-size="9.5" fill="#a5a49e" text-anchor="middle" font-weight="normal">balance ID</text>
+<path d="M647 130 h8" stroke="#b9b8b1" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="658" y="100" width="78" height="60" rx="5" fill="#199e70" opacity="0.12" stroke="#199e70" stroke-width="1.5"/>
+<text x="697.0" y="126" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">ash</text>
+<text x="697.0" y="140" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">correction</text>
+<text x="697.0" y="92" font-size="9.5" fill="#a5a49e" text-anchor="middle" font-weight="normal">subsample, ash</text>
+<path d="M247.0 160 V 186 H 178 V 210" stroke="#c98500" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+<path d="M697.0 160 V 186 H 514 V 210" stroke="#199e70" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+<rect x="28" y="214" width="300" height="52" rx="5" fill="#c98500" opacity="0.12" stroke="#c98500" stroke-width="1.5"/>
+<text x="42" y="236" font-size="12" fill="#898781" text-anchor="start" font-weight="600">SOIL stream — root-free residue</text>
+<text x="42" y="254" font-size="10.5" fill="#a5a49e" text-anchor="start" font-weight="normal">to soil carbon, under the agreed boundary</text>
+<rect x="364" y="214" width="300" height="52" rx="5" fill="#199e70" opacity="0.12" stroke="#199e70" stroke-width="1.5"/>
+<text x="378" y="236" font-size="12" fill="#898781" text-anchor="start" font-weight="600">ROOT stream — by class and depth</text>
+<text x="378" y="254" font-size="10.5" fill="#a5a49e" text-anchor="start" font-weight="normal">to 3. Root Biomass</text>
+<path d="M328 240 h30" stroke="#d95926" stroke-width="2" stroke-dasharray="4 4"/>
+<text x="346" y="230" font-size="13" fill="#d95926" text-anchor="middle" font-weight="normal">✕</text>
+<text x="346" y="286" font-size="10" fill="#d95926" text-anchor="middle" font-weight="normal">never recombined</text>
+<rect x="24" y="306" width="712" height="66" rx="5" fill="#d95926" opacity="0.10" stroke="#d95926" stroke-width="1.4"/>
+<text x="40" y="328" font-size="12.5" fill="#d95926" text-anchor="start" font-weight="600">DRAFT — not a validated SOP.</text>
+<text x="40" y="346" font-size="11" fill="#898781" text-anchor="start" font-weight="normal">Mesh sizes, diameter boundary, live/dead rule, drying temperature and the ash method all need a</text>
+<text x="40" y="362" font-size="11" fill="#898781" text-anchor="start" font-weight="normal">specialist review and primary references before field use.</text>
+</svg>

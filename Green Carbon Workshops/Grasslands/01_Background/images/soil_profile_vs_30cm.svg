@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="470" viewBox="0 0 760 470" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">What a 30 cm core leaves behind</title>
+<desc id="d">Two depth profiles, soil carbon and root carbon, averaged over five prairie plots cored to 60 centimetres. Each increment is drawn at its true thickness with bar length equal to carbon per 10 centimetres of depth. Below 30 centimetres lie 30 per cent of the soil carbon and 29 per cent of the root carbon in the 0 to 60 centimetre profile. Roots were still present at 60 centimetres, so the true totals are larger.</desc>
+<text x="0" y="20" font-size="15" font-weight="600" fill="#7a7a7a">What a 30 cm core leaves behind</text>
+<text x="0" y="38" font-size="12.5" fill="#9a9a9a">Mean of five prairie plots cored to 60 cm · bar length = kg C per m² per 10 cm of depth · area = stock</text>
+<rect x="0" y="234.0" width="760" height="138.0" fill="#9a9a9a" opacity="0.10"/>
+<line x1="0" y1="234.0" x2="760" y2="234.0" stroke="#7a7a7a" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="760" y="227.0" font-size="12" text-anchor="end" fill="#7a7a7a">a 30 cm core stops here</text>
+<text x="58" y="80" font-size="13.5" font-weight="600" fill="#7a7a7a">Soil carbon</text>
+<line x1="58" y1="96" x2="58" y2="372.0" stroke="#9a9a9a" stroke-width="1"/>
+<path d="M58.0 97.0 H304.0 A4.0 4.0 0 0 1 308.0 101.0 V137.0 A4.0 4.0 0 0 1 304.0 141.0 H58.0 Z" fill="#6E8B3D"/>
+<text x="316.0" y="121.5" font-size="12" fill="#7a7a7a">4.81</text>
+<path d="M58.0 143.0 H236.8 A4.0 4.0 0 0 1 240.8 147.0 V183.0 A4.0 4.0 0 0 1 236.8 187.0 H58.0 Z" fill="#6E8B3D"/>
+<text x="248.8" y="167.5" font-size="12" fill="#7a7a7a">3.51</text>
+<path d="M58.0 189.0 H185.9 A4.0 4.0 0 0 1 189.9 193.0 V229.0 A4.0 4.0 0 0 1 185.9 233.0 H58.0 Z" fill="#6E8B3D"/>
+<text x="197.9" y="213.5" font-size="12" fill="#7a7a7a">2.54</text>
+<path d="M58.0 235.0 H136.6 A4.0 4.0 0 0 1 140.6 239.0 V367.0 A4.0 4.0 0 0 1 136.6 371.0 H58.0 Z" fill="#6E8B3D"/>
+<text x="148.6" y="259.5" font-size="12" fill="#7a7a7a">1.59</text>
+<text x="58" y="396.0" font-size="12.5" fill="#7a7a7a">0–30 cm <tspan font-weight="600">10.86</tspan> · 30–60 cm <tspan font-weight="600">4.76</tspan> kg C/m²</text>
+<text x="58" y="414.0" font-size="12.5" fill="#7a7a7a"><tspan font-weight="600">30%</tspan> of the 0–60 cm total is below 30 cm</text>
+<text x="432" y="80" font-size="13.5" font-weight="600" fill="#7a7a7a">Root carbon</text>
+<line x1="432" y1="96" x2="432" y2="372.0" stroke="#9a9a9a" stroke-width="1"/>
+<path d="M432.0 97.0 H678.0 A4.0 4.0 0 0 1 682.0 101.0 V137.0 A4.0 4.0 0 0 1 678.0 141.0 H432.0 Z" fill="#6E8B3D"/>
+<text x="690.0" y="121.5" font-size="12" fill="#7a7a7a">0.42</text>
+<path d="M432.0 143.0 H558.5 A4.0 4.0 0 0 1 562.5 147.0 V183.0 A4.0 4.0 0 0 1 558.5 187.0 H432.0 Z" fill="#6E8B3D"/>
+<text x="570.5" y="167.5" font-size="12" fill="#7a7a7a">0.22</text>
+<path d="M432.0 189.0 H496.0 A4.0 4.0 0 0 1 500.0 193.0 V229.0 A4.0 4.0 0 0 1 496.0 233.0 H432.0 Z" fill="#6E8B3D"/>
+<text x="508.0" y="213.5" font-size="12" fill="#7a7a7a">0.11</text>
+<path d="M432.0 235.0 H489.4 A4.0 4.0 0 0 1 493.4 239.0 V367.0 A4.0 4.0 0 0 1 489.4 371.0 H432.0 Z" fill="#6E8B3D"/>
+<text x="501.4" y="259.5" font-size="12" fill="#7a7a7a">0.10</text>
+<text x="432" y="396.0" font-size="12.5" fill="#7a7a7a">0–30 cm <tspan font-weight="600">0.75</tspan> · 30–60 cm <tspan font-weight="600">0.31</tspan> kg C/m²</text>
+<text x="432" y="414.0" font-size="12.5" fill="#7a7a7a"><tspan font-weight="600">29%</tspan> of the 0–60 cm total is below 30 cm</text>
+<text x="50" y="100.0" font-size="11" text-anchor="end" fill="#9a9a9a">0</text>
+<text x="50" y="146.0" font-size="11" text-anchor="end" fill="#9a9a9a">10</text>
+<text x="50" y="192.0" font-size="11" text-anchor="end" fill="#9a9a9a">20</text>
+<text x="50" y="238.0" font-size="11" text-anchor="end" fill="#9a9a9a">30</text>
+<text x="50" y="376.0" font-size="11" text-anchor="end" fill="#9a9a9a">60</text>
+<text x="0" y="80" font-size="11" fill="#9a9a9a">cm</text>
+<text x="0" y="444" font-size="12" fill="#9a9a9a">Roots were still present at 60 cm, so even the 0–60 cm figure is a minimum. UP-03 hit refusal at 30 cm and is not in this mean.</text>
+<text x="0" y="462" font-size="12" fill="#9a9a9a">Constructed teaching data from the Worked Example — not a regional value.</text>
+</svg>
