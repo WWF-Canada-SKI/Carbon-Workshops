@@ -1,0 +1,83 @@
+{
+  "type": "FeatureCollection",
+  "name": "grassland_carbon_sampling_design",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "_README": [
+    "Template for Part 2, Steps 1 and 2 of the Grassland Carbon Workshop.",
+    "",
+    "Coordinates are longitude, latitude in WGS84 (EPSG:4326). Replace every",
+    "coordinate below; the ones here are a placeholder square near Regina and",
+    "exist only so the file opens and draws in QGIS, ArcGIS, Earth Engine or",
+    "geojson.io without editing anything first.",
+    "",
+    "Three feature roles, set by the 'role' property:",
+    "  study_area  exactly one. The outer boundary from Step 1.",
+    "  exclusion   any number. Wetland, road, outcrop, shelterbelt, dugout.",
+    "              Subtract these from the study area before recording net area.",
+    "  stratum     any number. The meaningfully distinct areas from Step 2.",
+    "",
+    "AREA: do not trust an area computed in degrees. Reproject to a metre-based",
+    "CRS appropriate to your site before measuring - a UTM zone, or a Statistics",
+    "Canada Lambert (EPSG:3347) for prairie-wide work - then record area_m2.",
+    "",
+    "Delete this _README key before loading the file into a tool that validates",
+    "GeoJSON strictly."
+  ],
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "role": "study_area",
+        "name": "",
+        "inclusion_rule": "One sentence: what is in, what is out, and how you told them apart.",
+        "area_m2": null,
+        "area_ha": null,
+        "native_or_seeded": "",
+        "boundary_source": "property survey / drawn from imagery / existing management unit",
+        "date_defined": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-104.62,50.44],[-104.60,50.44],[-104.60,50.45],[-104.62,50.45],[-104.62,50.44]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "role": "exclusion",
+        "name": "",
+        "exclusion_type": "wetland / road / rock outcrop / shelterbelt / dugout / other",
+        "area_m2": null,
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-104.615,50.443],[-104.611,50.443],[-104.611,50.445],[-104.615,50.445],[-104.615,50.443]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "role": "stratum",
+        "name": "",
+        "stratum_rule": "An objective rule, e.g. 'north of the cross-fence, rotationally grazed since 2015'.",
+        "area_m2": null,
+        "area_ha": null,
+        "restoration_year": null,
+        "years_since_fire": null,
+        "management": "",
+        "grazing_regime": "",
+        "cultivation_history": "",
+        "native_or_seeded": "",
+        "is_reporting_unit": true,
+        "is_comparison_unit": false,
+        "planned_soil_samples": null,
+        "planned_root_samples": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-104.62,50.44],[-104.61,50.44],[-104.61,50.45],[-104.62,50.45],[-104.62,50.44]]]
+      }
+    }
+  ]
+}

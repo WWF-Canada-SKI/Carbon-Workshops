@@ -9,7 +9,7 @@ Here we will show hypothetical examples for 2 different project:
 | Part | Example | Data |
 |---|---|---|
 | **Planning and field practice** ([Parts 2](../02_Project_Planning/) and [3](../03_Field_Methods/)) | A team planning a baseline survey of the eelgrass at **Tsawwassen, BC** | ⚠️ **Constructed for teaching.** The site, boundary and zones come from a real run of the sampling tool; the team, its cores and its field records do not exist |
-| **Analysis** ([Part 4](../04_Data_Interpretation/)) | Three eelgrass cores from the **Cowichan Estuary, BC**, followed from lab results to both analysis options | **Published measurements** (Douglas et al. 2022, via Janousek et al. 2025, CC BY 4.0), with **reconstructed** dry weights and **illustrative** lab details. The Option B area is a **hypothetical** boundary drawn for teaching |
+| **Analysis** ([Part 4](../04_Results/)) | Three eelgrass cores from the **Cowichan Estuary, BC**, followed from lab results to both analysis options | **Published measurements** (Douglas et al. 2022, via Janousek et al. 2025, CC BY 4.0), with **reconstructed** dry weights and **illustrative** lab details. The Option B area is a **hypothetical** boundary drawn for teaching |
 
 The idea is simple: **work alongside these examples, and apply the blank templates to your own
 site.**
@@ -17,11 +17,11 @@ site.**
 | You want… | Use this |
 |---|---|
 | A completed planning example | [`02_Project_Planning.md`](02_Project_Planning.md) |
-| A completed digital data sheet | [`04_Data_Interpretation/files/Eelgrass_Carbon_DigitalData_Example.xlsx`](../04_Data_Interpretation/files/Eelgrass_Carbon_DigitalData_Example.xlsx) |
-| What a lab results sheet looks like | [`04_Data_Interpretation/files/Example_Lab_Results.xlsx`](../04_Data_Interpretation/files/Example_Lab_Results.xlsx) |
-| A blank data sheet to fill in | [`04_Data_Interpretation/files/Eelgrass_Carbon_DigitalData_BlankSheet.xlsx`](../04_Data_Interpretation/files/Eelgrass_Carbon_DigitalData_BlankSheet.xlsx) |
+| A completed digital data sheet | [`04_Data_Interpretation/files/Eelgrass_Carbon_DigitalData_Example.xlsx`](../resources.md#pending-materials) |
+| What a lab results sheet looks like | [`04_Data_Interpretation/files/Example_Lab_Results.xlsx`](../resources.md#pending-materials) |
+| A blank data sheet to fill in | [`04_Data_Interpretation/files/Eelgrass_Carbon_DigitalData_BlankSheet.xlsx`](../resources.md#pending-materials) |
 | A blank sampling calculator | [`02_Project_Planning/`](../02_Project_Planning/) |
-| The analysis workflow (reusable) | [`04_Data_Interpretation/DataAnalysisWorkflow/`](../04_Data_Interpretation/DataAnalysisWorkflow/) |
+| The analysis workflow (reusable) | [`04_Data_Interpretation/DataAnalysisWorkflow/`](../resources.md#pending-materials) |
 
 ---
 
@@ -32,7 +32,7 @@ site.**
    coordinates.
 2. **Collect** ([Part 3](../03_Field_Methods/)) — the field data sheet; its filled-in example
    uses the Tsawwassen core `WWF-01-A`.
-3. **Analyse** ([Part 4](../04_Data_Interpretation/)) — the Cowichan cores in the digital data
+3. **Analyse** ([Part 4](../04_Results/)) — the Cowichan cores in the digital data
    sheet, checked, turned into core stocks, and taken through Option A and Option B:
 
    ```r

@@ -135,8 +135,8 @@ worth it.*
 | Stage | Where |
 |---|---|
 | Collecting the cores this plan specifies | [Part 3 — Field Methods](../03_Field_Methods/) |
-| Lab results and carbon estimates | [Part 4 — Data Interpretation](../04_Data_Interpretation/) |
-| How a filled-in data sheet and analysis look | The Cowichan worked example in [Part 4](../04_Data_Interpretation/) (published cores) |
+| Lab results and carbon estimates | [Part 4 — Data Interpretation](../04_Results/) |
+| How a filled-in data sheet and analysis look | The Cowichan worked example in [Part 4](../04_Results/) (published cores) |
 
 > **Note on scale.** The plan above sizes a full campaign at **33 cores**. A first season often
 > brings back fewer — which is the ordinary shape of a first field campaign, not a failure. Part 4's

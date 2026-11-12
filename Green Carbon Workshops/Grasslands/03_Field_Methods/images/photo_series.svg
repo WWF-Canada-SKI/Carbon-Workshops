@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="418" viewBox="0 0 760 418" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">The plot photograph series</title>
+<desc id="d">A plot centre with arrows to the four cardinal directions, three frames each at 45 degrees up, horizontal and 45 degrees down, plus one straight down and one straight up, and two overhead frames of the quadrat before and after clipping. Below, the filename convention.</desc>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#3987e5"/></marker></defs>
+<text x="24" y="28" font-size="14" fill="#898781" text-anchor="start" font-weight="600">The photograph series</text>
+<text x="24" y="46" font-size="11.5" fill="#a5a49e" text-anchor="start" font-weight="normal">One convention, so frames can be compared between plots, crews and visits.</text>
+<circle cx="214" cy="192" r="84" fill="none" stroke="#b9b8b1" stroke-width="1" stroke-dasharray="4 4"/>
+<circle cx="214" cy="192" r="4" fill="#898781"/>
+<line x1="214" y1="192" x2="214.0" y2="108.0" stroke="#3987e5" stroke-width="2" marker-end="url(#ar)"/>
+<text x="214.0" y="86.0" font-size="12.5" fill="#3987e5" text-anchor="middle" font-weight="600">N</text>
+<text x="214.0" y="102.0" font-size="10" fill="#a5a49e" text-anchor="middle" font-weight="normal">3–5</text>
+<line x1="214" y1="192" x2="298.0" y2="192.0" stroke="#3987e5" stroke-width="2" marker-end="url(#ar)"/>
+<text x="324.0" y="196.0" font-size="12.5" fill="#3987e5" text-anchor="middle" font-weight="600">E</text>
+<text x="324.0" y="212.0" font-size="10" fill="#a5a49e" text-anchor="middle" font-weight="normal">6–8</text>
+<line x1="214" y1="192" x2="214.0" y2="276.0" stroke="#3987e5" stroke-width="2" marker-end="url(#ar)"/>
+<text x="214.0" y="306.0" font-size="12.5" fill="#3987e5" text-anchor="middle" font-weight="600">S</text>
+<text x="214.0" y="322.0" font-size="10" fill="#a5a49e" text-anchor="middle" font-weight="normal">9–11</text>
+<line x1="214" y1="192" x2="130.0" y2="192.0" stroke="#3987e5" stroke-width="2" marker-end="url(#ar)"/>
+<text x="104.0" y="196.0" font-size="12.5" fill="#3987e5" text-anchor="middle" font-weight="600">W</text>
+<text x="104.0" y="212.0" font-size="10" fill="#a5a49e" text-anchor="middle" font-weight="normal">12–14</text>
+<text x="396" y="92" font-size="13" fill="#898781" text-anchor="start" font-weight="600">Three frames per direction</text>
+<line x1="396" y1="132" x2="452" y2="110" stroke="#3987e5" stroke-width="2" marker-end="url(#ar)"/>
+<text x="468" y="125.0" font-size="12" fill="#898781" text-anchor="start" font-weight="normal">45° up</text>
+<line x1="396" y1="166" x2="452" y2="166" stroke="#3987e5" stroke-width="2" marker-end="url(#ar)"/>
+<text x="468" y="170.0" font-size="12" fill="#898781" text-anchor="start" font-weight="normal">horizontal</text>
+<line x1="396" y1="200" x2="452" y2="222" stroke="#3987e5" stroke-width="2" marker-end="url(#ar)"/>
+<text x="468" y="215.0" font-size="12" fill="#898781" text-anchor="start" font-weight="normal">45° down</text>
+<text x="396" y="240" font-size="11.5" fill="#898781" text-anchor="start" font-weight="normal">Frames 1–2   straight down, then straight up</text>
+<text x="396" y="258" font-size="11.5" fill="#898781" text-anchor="start" font-weight="normal">Frames 3–14  three per direction, as above</text>
+<text x="396" y="276" font-size="11.5" fill="#898781" text-anchor="start" font-weight="normal">Frames 15–16  the quadrat overhead, before</text>
+<text x="474" y="294" font-size="11.5" fill="#898781" text-anchor="start" font-weight="normal">and after clipping</text>
+<text x="396" y="330" font-size="12" fill="#3987e5" text-anchor="start" font-weight="600">16 frames per plot.</text>
+<text x="24" y="344" font-size="11.5" fill="#a5a49e" text-anchor="start" font-weight="normal">Every frame carries a board, or a first frame with the same fields:</text>
+<rect x="24" y="356" width="712" height="30" rx="4" fill="#3987e5" opacity="0.08"/>
+<text x="36" y="376" font-size="12.5" fill="#898781" text-anchor="start" font-weight="normal">GRASS-01 · P04 · 2026-07-18 · N-horizontal · frame 03 · initials</text>
+<text x="24" y="404" font-size="11.5" fill="#a5a49e" text-anchor="start" font-weight="normal">Record the filenames on the plot log and keep the originals — a renamed copy loses the camera timestamp.</text>
+</svg>

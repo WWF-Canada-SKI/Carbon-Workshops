@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="250" viewBox="0 0 280 250" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Nested plot layout</title>
+<desc id="d">Plan view of a nested plot: a large circular plot, a medium square plot inside it, a small quadrat, and a soil core beside the quadrat.</desc>
+<g transform="translate(-100,-44)">
+<circle cx="240" cy="176" r="112" fill="#199e70" opacity="0.08" stroke="#199e70" stroke-width="2"/>
+<text x="240" y="58" font-size="11.5" fill="#199e70" text-anchor="middle" font-weight="normal">large plot</text>
+<rect x="184" y="120" width="112" height="112" fill="#3987e5" opacity="0.10" stroke="#3987e5" stroke-width="2"/>
+<text x="240" y="112" font-size="11.5" fill="#3987e5" text-anchor="middle" font-weight="normal">medium plot</text>
+<rect x="196" y="182" width="34" height="34" fill="#d95926" opacity="0.22" stroke="#d95926" stroke-width="2"/>
+<text x="213" y="232" font-size="11" fill="#d95926" text-anchor="middle" font-weight="normal">quadrat</text>
+<circle cx="274" cy="200" r="6" fill="#c98500"/>
+<text x="274" y="222" font-size="11" fill="#c98500" text-anchor="middle" font-weight="normal">core</text>
+<circle cx="240" cy="176" r="3.5" fill="#898781"/>
+</g>
+</svg>

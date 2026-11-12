@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="356" viewBox="0 0 760 356" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Sectioning the core and routing the fractions</title>
+<desc id="d">An oriented core laid on a depth-marked tray with five increments from 0 to 84 centimetres, the deepest one ending at refusal and marked to be recorded as 84 rather than the planned 100. Beside it, one interval routed to four destinations: soil carbon, bulk density, roots and archive.</desc>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#b9b8b1"/></marker></defs>
+<text x="24" y="28" font-size="14" fill="#898781" text-anchor="start" font-weight="600">Sectioning the core, and where each fraction goes</text>
+<text x="24" y="46" font-size="11.5" fill="#a5a49e" text-anchor="start" font-weight="normal">Record the depths you actually recovered, not the ones you planned.</text>
+<rect x="26" y="64" width="328" height="222" rx="5" fill="none" stroke="#b9b8b1" stroke-width="1"/>
+<text x="40" y="82" font-size="10.5" fill="#a5a49e" text-anchor="start" font-weight="normal">depth-marked tray — keep the core oriented</text>
+<text x="40" y="104" font-size="10" fill="#c98500" text-anchor="start" font-weight="600">TOP</text>
+<text x="314" y="104" font-size="10" fill="#c98500" text-anchor="start" font-weight="600">BASE</text>
+<rect x="40.0" y="116" width="33.7" height="44" rx="2" fill="#c98500" opacity="0.10" stroke="#c98500" stroke-width="1.2"/>
+<text x="57.85714285714286" y="176" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">0–10</text>
+<rect x="75.7" y="116" width="33.7" height="44" rx="2" fill="#c98500" opacity="0.15" stroke="#c98500" stroke-width="1.2"/>
+<text x="93.57142857142858" y="176" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">10–20</text>
+<rect x="111.4" y="116" width="33.7" height="44" rx="2" fill="#c98500" opacity="0.20" stroke="#c98500" stroke-width="1.2"/>
+<text x="129.28571428571428" y="176" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">20–30</text>
+<rect x="147.1" y="116" width="105.1" height="44" rx="2" fill="#c98500" opacity="0.25" stroke="#c98500" stroke-width="1.2"/>
+<text x="200.71428571428572" y="176" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">30–60</text>
+<rect x="254.3" y="116" width="83.7" height="44" rx="2" fill="#c98500" opacity="0.30" stroke="#c98500" stroke-width="1.2"/>
+<text x="297.1428571428571" y="176" font-size="10.5" fill="#898781" text-anchor="middle" font-weight="normal">60–84</text>
+<text x="190.0" y="194" font-size="10" fill="#a5a49e" text-anchor="middle" font-weight="normal">cm below surface</text>
+<rect x="254.3" y="116" width="83.7" height="44" rx="2" fill="none" stroke="#d95926" stroke-width="2"/>
+<text x="297.14285714285717" y="222" font-size="10.5" fill="#d95926" text-anchor="middle" font-weight="normal">refusal at 84 cm —</text>
+<text x="297.14285714285717" y="236" font-size="10.5" fill="#d95926" text-anchor="middle" font-weight="normal">record 84, never 100</text>
+<text x="40" y="266" font-size="10.5" fill="#a5a49e" text-anchor="start" font-weight="normal">Clean the blade and tray between every interval.</text>
+<text x="392" y="92" font-size="13" fill="#898781" text-anchor="start" font-weight="600">One interval, four destinations</text>
+<rect x="450" y="110" width="150" height="28" rx="4" fill="#3987e5" opacity="0.14" stroke="#3987e5" stroke-width="1.4"/>
+<text x="525" y="129" font-size="11.5" fill="#898781" text-anchor="middle" font-weight="normal">soil carbon</text>
+<path d="M422 192 Q 436 126 448 124" stroke="#b9b8b1" stroke-width="1.4" fill="none" marker-end="url(#ar)"/>
+<rect x="450" y="150" width="150" height="28" rx="4" fill="#c98500" opacity="0.14" stroke="#c98500" stroke-width="1.4"/>
+<text x="525" y="169" font-size="11.5" fill="#898781" text-anchor="middle" font-weight="normal">bulk density</text>
+<path d="M422 192 Q 436 166 448 164" stroke="#b9b8b1" stroke-width="1.4" fill="none" marker-end="url(#ar)"/>
+<rect x="450" y="190" width="150" height="28" rx="4" fill="#199e70" opacity="0.14" stroke="#199e70" stroke-width="1.4"/>
+<text x="525" y="209" font-size="11.5" fill="#898781" text-anchor="middle" font-weight="normal">roots</text>
+<path d="M422 192 Q 436 206 448 204" stroke="#b9b8b1" stroke-width="1.4" fill="none" marker-end="url(#ar)"/>
+<rect x="450" y="230" width="150" height="28" rx="4" fill="#a5a49e" opacity="0.14" stroke="#a5a49e" stroke-width="1.4"/>
+<text x="525" y="249" font-size="11.5" fill="#898781" text-anchor="middle" font-weight="normal">archive</text>
+<path d="M422 192 Q 436 246 448 244" stroke="#b9b8b1" stroke-width="1.4" fill="none" marker-end="url(#ar)"/>
+<rect x="386" y="176" width="36" height="32" rx="3" fill="#c98500" opacity="0.22" stroke="#c98500" stroke-width="1.6"/>
+<text x="404" y="222" font-size="10" fill="#898781" text-anchor="middle" font-weight="normal">10–20 cm</text>
+<text x="392" y="300" font-size="11.5" fill="#a5a49e" text-anchor="start" font-weight="normal">The same material cannot serve every destructive</text>
+<text x="392" y="317" font-size="11.5" fill="#a5a49e" text-anchor="start" font-weight="normal">analysis. Agree the split and the minimum masses</text>
+<text x="392" y="334" font-size="11.5" fill="#a5a49e" text-anchor="start" font-weight="normal">with the laboratory before the field day.</text>
+</svg>

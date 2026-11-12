@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="736" height="186" viewBox="0 0 736 186" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Sampling strategies</title>
+<desc id="d">Four panels of sample placement: random, systematic grid, stratified random, and paired across a boundary.</desc>
+<rect x="8" y="8" width="168" height="150" rx="4" fill="none" stroke="#b9b8b1" stroke-width="1"/>
+<circle cx="68.3" cy="41.1" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="112.3" cy="31.7" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="96.8" cy="66.9" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="32.6" cy="83.9" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="29.8" cy="75.0" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="34.2" cy="33.9" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="81.9" cy="122.2" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="41.4" cy="49.8" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="109.1" cy="136.7" r="4" fill="#3987e5" opacity="0.85"/>
+<text x="92.0" y="178" font-size="12" fill="#898781" text-anchor="middle" font-weight="600">Random</text>
+<rect x="192" y="8" width="168" height="150" rx="4" fill="none" stroke="#b9b8b1" stroke-width="1"/>
+<circle cx="225.6" cy="38.0" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="225.6" cy="83.0" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="225.6" cy="128.0" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="276.0" cy="38.0" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="276.0" cy="83.0" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="276.0" cy="128.0" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="326.4" cy="38.0" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="326.4" cy="83.0" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="326.4" cy="128.0" r="4" fill="#3987e5" opacity="0.85"/>
+<text x="276.0" y="178" font-size="12" fill="#898781" text-anchor="middle" font-weight="600">Systematic</text>
+<rect x="376" y="8" width="168" height="150" rx="4" fill="none" stroke="#b9b8b1" stroke-width="1"/>
+<rect x="377" y="9.0" width="166" height="49.333333333333336" fill="#199e70" opacity="0.12"/>
+<rect x="377" y="58.333333333333336" width="166" height="49.333333333333336" fill="#3987e5" opacity="0.12"/>
+<rect x="377" y="107.66666666666667" width="166" height="49.333333333333336" fill="#c98500" opacity="0.12"/>
+<circle cx="470.9" cy="29.2" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="527.2" cy="17.1" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="510.6" cy="25.5" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="409.8" cy="69.6" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="433.0" cy="93.7" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="414.9" cy="85.6" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="479.6" cy="128.3" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="466.7" cy="117.7" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="397.9" cy="122.6" r="4" fill="#3987e5" opacity="0.85"/>
+<text x="460.0" y="178" font-size="12" fill="#898781" text-anchor="middle" font-weight="600">Stratified random</text>
+<rect x="560" y="8" width="168" height="150" rx="4" fill="none" stroke="#b9b8b1" stroke-width="1"/>
+<line x1="644.0" y1="8" x2="644.0" y2="158" stroke="#d95926" stroke-width="2" stroke-dasharray="6 4"/>
+<circle cx="610.4" cy="32.0" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="677.6" cy="32.0" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="610.4" cy="65.0" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="677.6" cy="65.0" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="610.4" cy="98.0" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="677.6" cy="98.0" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="610.4" cy="131.0" r="4" fill="#3987e5" opacity="0.85"/>
+<circle cx="677.6" cy="131.0" r="4" fill="#3987e5" opacity="0.85"/>
+<text x="644.0" y="178" font-size="12" fill="#898781" text-anchor="middle" font-weight="600">Paired</text>
+</svg>

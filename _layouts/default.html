@@ -1,0 +1,41 @@
+{% assign current_url = page.url | remove: 'index.html' | replace: '%20', ' ' %}
+{% assign display_title = page.title %}
+{% for workshop in site.data.workshops %}{% for item in workshop.items %}{% if current_url == item.url %}{% assign display_title = workshop.title | append: ' — ' | append: item.title %}{% endif %}{% endfor %}{% endfor %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{% if display_title %}{{ display_title | escape }} · {% endif %}{{ site.title | escape }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <script>
+    window.MathJax = {tex: {inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']]}};
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="{{ '/' | relative_url }}"><span>Carbon Workshops<br><small>Learn. Plan. Measure.</small></span></a>
+    <nav aria-label="Main navigation"><a href="{{ '/' | relative_url }}">All workshops</a> · <a href="{{ '/Blue Carbon Workshops/resources.html' | relative_url }}">Resources</a></nav>
+  </header>
+  <div class="site-grid">
+    <aside class="sidebar" aria-label="Workshop navigation">
+      <details>
+        <summary>Explore workshops</summary>
+        {% for workshop in site.data.workshops %}
+        <div class="nav-group">
+          <h2><a href="{{ workshop.url | relative_url }}">{{ workshop.title }}</a></h2>
+          <ul>{% for item in workshop.items %}<li><a {% if current_url == item.url %}aria-current="page"{% endif %} href="{{ item.url | relative_url }}">{{ item.title }}</a></li>{% endfor %}</ul>
+        </div>
+        {% endfor %}
+      </details>
+    </aside>
+    <main id="main" class="main-content" tabindex="-1">
+      {% unless page.home %}<div class="breadcrumb"><a href="{{ '/' | relative_url }}">All workshops</a><span aria-hidden="true"> / </span>{% if page.url contains 'Blue' %}<a href="{{ '/Blue Carbon Workshops/' | relative_url }}">Blue Carbon</a>{% elsif page.url contains 'Green' %}<a href="{{ '/Green Carbon Workshops/' | relative_url }}">Green Carbon</a>{% endif %}</div>{% endunless %}
+      <article class="prose">{{ content }}</article>
+      <footer class="page-footer"><p>Workshop guides and resources · WWF-Canada</p><p><a href="https://github.com/{{ site.github.repository_nwo }}/blob/main/{{ page.path | replace: ' ', '%20' }}">View this page on GitHub</a></p></footer>
+    </main>
+  </div>
+</body>
+</html>

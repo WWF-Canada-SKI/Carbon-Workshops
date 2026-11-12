@@ -1,0 +1,75 @@
+- title: Blue Carbon
+  url: /Blue Carbon Workshops/
+  items:
+    - title: Workshop overview
+      url: /Blue Carbon Workshops/
+    - title: 1. Background
+      url: /Blue Carbon Workshops/01_Background/
+    - title: 2. Project Planning
+      url: /Blue Carbon Workshops/02_Project_Planning/
+    - title: 3. Field Methods
+      url: /Blue Carbon Workshops/03_Field_Methods/
+    - title: 4. Data Interpretation
+      url: /Blue Carbon Workshops/04_Results/
+    - title: Worked Example
+      url: /Blue Carbon Workshops/Worked_Example/
+    - title: Downloads & Resources
+      url: /Blue Carbon Workshops/resources.html
+- title: Green Carbon
+  url: /Green Carbon Workshops/
+  items:
+    - title: Workshop overview
+      url: /Green Carbon Workshops/
+    - title: Shared measurement guides
+      url: /Green Carbon Workshops/_Shared/
+- title: Forests
+  url: /Green Carbon Workshops/Forests/
+  items:
+    - title: Workshop overview
+      url: /Green Carbon Workshops/Forests/
+    - title: 1. Background
+      url: /Green Carbon Workshops/Forests/01_Background/
+    - title: 2. Project Planning
+      url: /Green Carbon Workshops/Forests/02_Project_Planning/
+    - title: 3. Field Methods
+      url: /Green Carbon Workshops/Forests/03_Field_Methods/
+    - title: 4. Data Interpretation
+      url: /Green Carbon Workshops/Forests/04_Data_Interpretation/
+    - title: LiDAR supplement
+      url: /Green Carbon Workshops/Forests/05_LiDAR_Supplement/
+    - title: Worked example
+      url: /Green Carbon Workshops/Forests/Worked_Example/
+- title: Grasslands
+  url: /Green Carbon Workshops/Grasslands/
+  items:
+    - title: Workshop overview
+      url: /Green Carbon Workshops/Grasslands/
+    - title: 1. Background
+      url: /Green Carbon Workshops/Grasslands/01_Background/
+    - title: 2. Project Planning
+      url: /Green Carbon Workshops/Grasslands/02_Project_Planning/
+    - title: 3. Field Methods
+      url: /Green Carbon Workshops/Grasslands/03_Field_Methods/
+    - title: 4. Data Interpretation
+      url: /Green Carbon Workshops/Grasslands/04_Data_Interpretation/
+    - title: Monitoring supplement
+      url: /Green Carbon Workshops/Grasslands/05_Monitoring/
+    - title: Worked example
+      url: /Green Carbon Workshops/Grasslands/Worked_Example/
+- title: Wetlands
+  url: /Green Carbon Workshops/Wetlands/
+  items:
+    - title: Workshop overview
+      url: /Green Carbon Workshops/Wetlands/
+    - title: 1. Background
+      url: /Green Carbon Workshops/Wetlands/01_Background/
+    - title: 2. Project Planning
+      url: /Green Carbon Workshops/Wetlands/02_Project_Planning/
+    - title: 3. Field Methods
+      url: /Green Carbon Workshops/Wetlands/03_Field_Methods/
+    - title: 4. Data Interpretation
+      url: /Green Carbon Workshops/Wetlands/04_Data_Interpretation/
+    - title: Chronology supplement
+      url: /Green Carbon Workshops/Wetlands/05_Chronology_Supplement/
+    - title: Worked example
+      url: /Green Carbon Workshops/Wetlands/Worked_Example/

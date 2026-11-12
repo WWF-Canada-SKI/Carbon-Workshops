@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="240" viewBox="0 0 470 240" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Study area boundary</title>
+<desc id="d">A project boundary polygon containing a wetland, a rock outcrop and a road, with a fence line crossing it.</desc>
+<g transform="translate(-16,-42)">
+<path d="M40 70 L430 62 L470 176 L392 268 L96 262 L36 168 Z" fill="#199e70" opacity="0.16" stroke="#199e70" stroke-width="2.5"/>
+<path d="M150 120 q30 -22 62 -4 q20 30 -10 44 q-44 10 -52 -40 z" fill="#d95926" opacity="0.30" stroke="#d95926" stroke-width="1.8"/>
+<path d="M330 190 l40 -14 l24 30 l-30 26 l-36 -14 z" fill="#d95926" opacity="0.30" stroke="#d95926" stroke-width="1.8"/>
+<text x="182" y="168" font-size="11" fill="#d95926" text-anchor="middle" font-weight="normal">wetland</text>
+<text x="356" y="236" font-size="11" fill="#d95926" text-anchor="middle" font-weight="normal">rock outcrop</text>
+<path d="M36 214 L470 198" stroke="#d95926" stroke-width="9" opacity="0.30"/>
+<text x="96" y="192" font-size="11" fill="#d95926" text-anchor="start" font-weight="normal">road</text>
+<path d="M58 78 L64 258" stroke="#c98500" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="70" y="256" font-size="11" fill="#c98500" text-anchor="start" font-weight="normal">fence line</text>
+</g>
+</svg>

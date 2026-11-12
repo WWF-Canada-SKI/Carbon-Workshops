@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="174" viewBox="0 0 760 174" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Carbon in each grassland pool</title>
+<desc id="d">Horizontal bar chart of mean carbon in three pools across six prairie plots of the worked example: soil to 30 cm 10.97, roots to 30 cm 0.81 and shoots 0.17 kilograms of carbon per square metre. Soil holds 66× and roots 4.9× the carbon of the shoots.</desc>
+<text x="136" y="39.5" font-size="14.5" text-anchor="end" fill="#7a7a7a">Soil</text>
+<path d="M150.0 18.0 H586.0 A4.0 4.0 0 0 1 590.0 22.0 V46.0 A4.0 4.0 0 0 1 586.0 50.0 H150.0 Z" fill="#6E8B3D"/>
+<text x="602.0" y="39.5" font-size="14.5" fill="#7a7a7a"><tspan font-weight="600">10.97</tspan></text>
+<text x="136" y="91.5" font-size="14.5" text-anchor="end" fill="#7a7a7a">Roots</text>
+<path d="M150.0 70.0 H178.3 A4.0 4.0 0 0 1 182.3 74.0 V98.0 A4.0 4.0 0 0 1 178.3 102.0 H150.0 Z" fill="#6E8B3D"/>
+<text x="194.3" y="91.5" font-size="14.5" fill="#7a7a7a"><tspan font-weight="600">0.81</tspan></text>
+<text x="136" y="143.5" font-size="14.5" text-anchor="end" fill="#7a7a7a">Shoots</text>
+<path d="M150.0 122.0 H153.3 A3.3 3.3 0 0 1 156.6 125.3 V150.7 A3.3 3.3 0 0 1 153.3 154.0 H150.0 Z" fill="#6E8B3D"/>
+<text x="168.6" y="143.5" font-size="14.5" fill="#7a7a7a"><tspan font-weight="600">0.17</tspan></text>
+</svg>

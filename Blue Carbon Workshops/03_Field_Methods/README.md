@@ -8,7 +8,7 @@
 
 *Collecting sediment cores in the field.*
 
-[← 2 — Project Planning](../02_Project_Planning/) · [Back to main guide](../README.md) · Next: [4 — Data Interpretation →](../04_Data_Interpretation/)
+[← 2 — Project Planning](../02_Project_Planning/) · [Back to main guide](../README.md) · Next: [4 — Data Interpretation →](../04_Results/)
 
 ---
 
@@ -18,8 +18,7 @@ This section of the workshop focuses on **collecting the data** in the field. On
 ([Section 2](../02_Project_Planning/)), it's time for the field team to collect **sediment
 cores**. Here we cover the necessary equipment, tips for consistent
 coring, compaction measurement, and completing the
-[**field data sheet**](../Eelgrass_Carbon_Datasheet_v2.pdf) (blank, printable copies are in
-[`datasheets/`](datasheets/); see [Field data sheet](#field-data-sheet), below).
+[**field data sheet**](Eelgrass_Carbon_Datasheet_v2.pdf) (download the PDF for printing; see [Field data sheet](#field-data-sheet), below).
 
 The method shown is push (also known as percussion) coring with a PVC pipe, a cost-effective method that is commonly used in coastal ecosystems. Note that equipment requirements are
 similar for both salt marsh and seagrass ecosystems, and the methods may need to be adapted for
@@ -30,7 +29,7 @@ the conditions you are working in.
 ### Sources for this section
 
 This section follows WWF-Canada's field guide
-*[Measuring Carbon in Coastal Sediments](../Coastal-Blue-Carbon-Field-Guide-FINAL.pdf)* (2026) —
+*[Measuring Carbon in Coastal Sediments](https://wwf.ca/wp-content/uploads/2026/04/Coastal-Blue-Carbon-Field-Guide-FINAL.pdf)* (2026) —
 together with the accompanying video playlists:
 
 > 🎥 [*"Introduction to Sediment Cores"* — workshop playlist](https://www.youtube.com/playlist?list=PLLsjpJMfNDP5w78ZJNDUvMj1VoRG_qSwd)
@@ -533,8 +532,8 @@ if section 2 ends at 6 cm, section 3 starts at 6 cm, and so on.
 
 ## Field data sheet
 
-The workshop data sheet is included: **[`Eelgrass_Carbon_Datasheet_v2.pdf`](../Eelgrass_Carbon_Datasheet_v2.pdf)**
-(blank copies for printing can also live in [`datasheets/`](datasheets/)). It captures
+The workshop data sheet is included: **[`Eelgrass_Carbon_Datasheet_v2.pdf`](Eelgrass_Carbon_Datasheet_v2.pdf)**
+(download the PDF for printing). It captures
 exactly the fields the analysis expects:
 
 - **Plot notes**: Plot ID, date, study area, time, study site, weather/conditions, project name
@@ -565,8 +564,7 @@ exactly the fields the analysis expects:
 
 ## In this section
 
-- [`Eelgrass_Carbon_Datasheet_v2.pdf`](../Eelgrass_Carbon_Datasheet_v2.pdf) — the workshop field data sheet.
-- [`datasheets/`](datasheets/) — blank/printable data sheets.
+- [`Eelgrass_Carbon_Datasheet_v2.pdf`](Eelgrass_Carbon_Datasheet_v2.pdf) — the workshop field data sheet.
 - [`Making a soil core extractor doc.pdf`](Making%20a%20soil%20core%20extractor%20doc.pdf) — DIY extrusion device build instructions.
 - [`method_a_graduations.svg`](method_a_graduations.svg) — Method A compaction diagram (reading graduations on the tube).
 - `images/` — field method photos and diagrams.
