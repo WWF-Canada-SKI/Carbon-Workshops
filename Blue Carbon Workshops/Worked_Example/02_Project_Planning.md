@@ -136,10 +136,9 @@ worth it.*
 |---|---|
 | Collecting the cores this plan specifies | [Part 3 — Field Methods](../03_Field_Methods/) |
 | Lab results and carbon estimates | [Part 4 — Data Interpretation](../04_Results/) |
-| How a filled-in data sheet and analysis look | The Cowichan worked example in [Part 4](../04_Results/) (published cores) |
+| How a filled-in data sheet and analysis look | [Boundary Bay community analysis](../04_Results/#community-analysis-mapping-and-reporting) (separate example with simulated measurements) |
 
 > **Note on scale.** The plan above sizes a full campaign at **33 cores**. A first season often
-> brings back fewer — which is the ordinary shape of a first field campaign, not a failure. Part 4's
-> Option B reports the precision actually achieved against the ±20% target, rather than presenting
-> an under-powered result as a finished one. The constructed Tsawwassen analysis that used to follow
+> brings back fewer. If the sampling design supports estimating precision, compare the precision
+> achieved with the ±20% target. The constructed Tsawwassen analysis that used to follow
 > this plan is kept in [`archive/`](archive/) for reference.
