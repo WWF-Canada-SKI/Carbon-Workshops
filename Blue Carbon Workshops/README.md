@@ -22,7 +22,7 @@ any section you wish.
 | 1 | [**Background**](01_Background/) | What blue carbon is and why it matters; introduce key references (the [Howard et al. Blue Carbon Manual](https://www.thebluecarboninitiative.org/manual)); the workshop [slide deck](01_Background/BlueCarbon_EelgrassPPT_FinalV1.pdf).|
 | 2 | [**Project Planning**](02_Project_Planning/) | How many samples to take and where: Intro to probability-based sampling, sampling distribution strategies, and the WWF-Canada sampling-design guide + sampling design tools. |
 | 3 | [**Field Methods**](03_Field_Methods/) | Collecting sediment cores: equipment, step-by-step coring methods and coring how-to videos, and accompanying datasheets. |
-| 4 | [**Data Interpretation**](04_Results/) | Field-to-lab preparation and the outline for analysis; later sections in development. |
+| 4 | [**Data Interpretation**](04_Results/) | Field-to-lab preparation and a worked example in community analysis, mapping, and reporting. |
 
 
 ### Useful links
@@ -115,7 +115,7 @@ more carbon stored per square metre. The sheet does this arithmetic for every sl
 - [`BlueCarbon_SampleAllocation_Spreadsheet_V2.xlsx`](02_Project_Planning/BlueCarbon_SampleAllocation_Spreadsheet_V2.xlsx) — the sample-size calculator.
 - [`Eelgrass_Carbon_Datasheet_v2.pdf`](03_Field_Methods/Eelgrass_Carbon_Datasheet_v2.pdf) — the field datasheet.
 - **Coastal Blue Carbon Field Guide** — [PDF](https://wwf.ca/wp-content/uploads/2026/04/Coastal-Blue-Carbon-Field-Guide-FINAL.pdf) · [companion video playlist](https://www.youtube.com/playlist?list=PLLsjpJMfNDP5w78ZJNDUvMj1VoRG_qSwd).
-- [`04_Data_Interpretation/DataAnalysisWorkflow/`](resources.md#pending-materials) — analysis pipeline and report (not yet added; see availability).
+- [Community Analysis, Mapping, and Reporting](04_Results/#community-analysis-mapping-and-reporting) — example workbook, R workflow and Quarto report.
 - **Ecosystem Carbon Accumulation Visualizer** — [cathald.github.io/CarbonAccumulationVisualizer](https://cathald.github.io/CarbonAccumulationVisualizer/)
 - **WWF-Canada Blue Carbon Sampling Design Tools** — [github.com/WWF-Canada-SKI/Carbon-Measurement](https://github.com/WWF-Canada-SKI/Carbon-Measurement/tree/main/Blue%20Carbon/Sampling%20Design%20Tools)
 

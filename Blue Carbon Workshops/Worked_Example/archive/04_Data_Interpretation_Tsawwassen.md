@@ -1,7 +1,7 @@
-> 🗄️ **Archived.** This walkthrough used constructed Tsawwassen data and the earlier analysis pipeline
-> (now in `04_Data_Interpretation/DataAnalysisWorkflow/advanced/`). It is kept for reference only — the
-> current Part 4 follows the published Cowichan cores through the shared workflow and Options A and B.
-> See [Part 4](../../04_Results/) and the [archive note](README.md).
+> 🗄️ **Archived.** This walkthrough used constructed Tsawwassen data and the earlier analysis pipeline.
+> It is kept for reference. For the current example, see
+> [Community Analysis, Mapping, and Reporting](../../04_Results/#community-analysis-mapping-and-reporting)
+> and the [archive note](README.md).
 
 # Worked example — Part 4: Analysing the Tsawwassen cores
 

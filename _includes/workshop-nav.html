@@ -1,0 +1,5 @@
+<ul class="workshop-links">
+  {% for item in site.data.workshop %}
+  <li><a href="{{ item.url | relative_url }}"{% if include.current_url == item.url %} aria-current="page"{% endif %}>{{ item.title | escape }}</a></li>
+  {% endfor %}
+</ul>
