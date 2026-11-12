@@ -1,0 +1,52 @@
+{% assign current_url = page.url | remove: 'index.html' | replace: '%20', ' ' %}
+{% assign display_title = page.title %}
+{% for item in site.data.workshop %}
+  {% if current_url == item.url %}
+    {% assign display_title = item.title %}
+  {% endif %}
+{% endfor %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if display_title %}{{ display_title | escape }} · {% endif %}{{ site.title | escape }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <link rel="stylesheet" href="{{ '/assets/css/blue-carbon.css' | relative_url }}">
+  <script>
+    window.MathJax = {tex: {inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']]}};
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="{{ '/Blue Carbon Workshops/' | relative_url }}">{{ site.title | escape }}</a>
+      <a href="{{ '/Blue Carbon Workshops/resources.html' | relative_url }}">Downloads &amp; Resources</a>
+    </div>
+  </header>
+  <div class="site-grid">
+    <nav class="desktop-nav" aria-label="Workshop contents">
+      {% include workshop-nav.html current_url=current_url %}
+    </nav>
+    <nav class="mobile-nav" aria-label="Workshop contents">
+      <details>
+        <summary>Workshop contents</summary>
+        {% include workshop-nav.html current_url=current_url %}
+      </details>
+    </nav>
+    <main id="main" tabindex="-1">
+      <article class="prose">
+        {% unless content contains '<h1' %}
+          {% if display_title %}<h1>{{ display_title | escape }}</h1>{% endif %}
+        {% endunless %}
+        {{ content }}
+      </article>
+      <footer class="page-footer">
+        <p>Workshop guides and resources · WWF-Canada</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
